@@ -1,0 +1,118 @@
+// /* clear fix */
+// .grid:after {
+//     content: '';
+//     display: block;
+//     clear: both;
+// }
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+ .grid-item img {
+     display: block;
+     max-width: 100%;
+ }
+.grid-sizer,
+.grid-item {
+    width: 100%;
+}
+.width-vertical {
+    width: 50%;
+}
+
+// small
+@media (min-width: 576px) {
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }
+    .width-horizontal,
+    .width-horizontal-big {
+        width: 100%;
+    }
+}
+// large device
+@media (min-width: 992px) {
+    .grid-sizer,
+    .grid-item {
+        width: 33.33%;
+    }
+    .width-horizontal {
+        width: 66.66%;
+    }
+    .width-horizontal-big{
+        width: 100%;
+    }
+}
+// //extra large
+// @media (min-width: 1200px) {
+//     .grid-sizer,
+//     .grid-item {
+//         width: 20%;
+//     }
+//     .width-horizontal {
+//         width: 40%;
+//     }
+//     .width-horizontal-big {
+//         width: 60%;
+//     }
+//     .width-vertical {
+//         width: 10%;
+//     }
+// }
+
+#masonry {
+    .overlay-wrapper {
+        overflow: hidden;
+        position: relative;
+        img {
+            transition: .3s;
+            transform: scale(1);
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+            .overlay {
+                opacity: 1;
+                // visibility: visible;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        // border-radius: inherit;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        // visibility: hidden;
+        transition: .3s;
+        a {
+            display: inline-block;
+            color: $white;
+            font-weight: 300;
+            padding: 10px 23px;
+            line-height: 1;
+            border: 1px solid $white;
+            border-radius: 0px;
+            margin: 4px;
+            transition: 0.3s;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .overlay-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}

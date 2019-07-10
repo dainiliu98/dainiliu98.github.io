@@ -1,0 +1,27 @@
+// Variables
+
+// restate bootstrap variables
+$white: #fff !default;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15) !default;
+
+
+// Set a custom color
+$gainsboro: #dcdcdd  !default;
+$silver-sand: #c5c5c5  !default;
+$granite-gray: #656768 !default;
+$outer-space: #4b4b4b !default;
+$viridian: #3f7f7a !default;
+
+
+// Set primary color to orange
+$primary: $viridian !default;
+
+
+// Font overrides
+$font-family-sans-serif: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+
+$font-family-serif: "Cormorant Garamond", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+
+
+// Custom variables
+$navbar-height: 72px;

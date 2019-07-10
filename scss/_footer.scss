@@ -1,0 +1,19 @@
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-color: $silver-sand;
+  .social-link {
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+    color: $gainsboro;
+    background-color: $primary;
+    transition: background-color 0.15s ease-in-out;
+    &:hover {
+      background-color: darken($primary, 10%);
+      text-decoration: none;
+    }
+  }
+}

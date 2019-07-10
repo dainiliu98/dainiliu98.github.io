@@ -1,0 +1,30 @@
+
+
+#masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  background: linear-gradient(to bottom, #{fade-out($gainsboro, .4)} 0%, #{fade-out($gainsboro, .4)} 100%),
+    url('../img/Profile.JPG');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 992px) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}

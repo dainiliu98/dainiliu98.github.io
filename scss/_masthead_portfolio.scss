@@ -1,0 +1,62 @@
+
+
+// global masthead portfolio style
+#masthead_portfolio {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .breadcrumb {
+    background: none;
+    padding: 8px 0;
+    .active{
+      color:$primary;
+    }
+  }
+  .breadcrumb-item{
+    color: $outer-space;
+    a{
+      color:$outer-space;
+    }
+    a:hover{
+      color:$primary;
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: 992px) {
+    // height: 100%;
+    min-height: 20rem;
+    padding-top: calc(#{$navbar-height}+10rem);
+    padding-bottom: 0;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+// different background images for each page
+.illustrations {
+  background: linear-gradient(to bottom, #{fade-out($gainsboro, .4)} 0%, #{fade-out($gainsboro, .4)} 100%),
+  url('../img/Illustrations/Japan_Countryside_.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.book {
+  background: linear-gradient(to bottom, #{fade-out($gainsboro, .4)} 0%, #{fade-out($gainsboro, .4)} 100%),
+  url('../img/book/Japan_book1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
