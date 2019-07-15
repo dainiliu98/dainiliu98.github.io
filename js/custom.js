@@ -20,9 +20,20 @@
    // turn the hover off on touch screen
    // ========================================================================= /
 
-   $('.hover').on('touchstart touchend', function (e) {
-     e.preventDefault();
-     $(this).toggleClass('hover_effect');
+  //  $('.hover').on('touchstart touchend', function (e) {
+  //    e.preventDefault();
+  //    $(this).toggleClass('hover_effect');
+  //  });
+   
+   if ("ontouchstart" in document.documentElement) {
+     document.documentElement.className += " touch";
+     console.log("   supports touch");
+   } else {
+     console.log("   does NOT support touch");
+   }
+
+   $('.touch .overlay-wrapper').each(function () {
+     $('*').not(this).on('mouseover', function () {});
    });
 
    // ========================================================================= //
