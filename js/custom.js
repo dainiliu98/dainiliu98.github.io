@@ -17,13 +17,8 @@
    // });
 
    // ========================================================================= //
-   // turn the hover off on touch screen
+   //  touch screen hover and click
    // ========================================================================= /
-
-  //  $('.hover').on('touchstart touchend', function (e) {
-  //    e.preventDefault();
-  //    $(this).toggleClass('hover_effect');
-  //  });
    
    if ("ontouchstart" in document.documentElement) {
      document.documentElement.className += " touch";
@@ -70,7 +65,7 @@
    });
 
    // ========================================================================= //
-   //  My code nav link open on hover
+   // Nav link open on hover
    // ========================================================================= /
    $('ul.nav li.dropdown').hover(function () {
      $(this).find('.dropdown-menu').stop(true, true).delay(500).fadeIn(500);
@@ -169,19 +164,24 @@
    $grid.imagesLoaded().progress(function () {
      $grid.isotope('layout');
    });
-
-
-   // End of use strict
-
-   // click over to close navbar didn't work
-
-   // $(document).ready(function () {
-   //   $(document).click(function (event) {
-   //     var clickover = $(event.target);
-   //     var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
-   //     if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-   //       $("button.navbar-toggler").click();
-   //     }
-   //   });
-   // });
+// ========================================================================= //
+//  accordion 
+// ========================================================================= /
+// toggle plus and minus icons
+$("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find(".plus-minus")
+    .toggleClass("lni-plus lni-minus");
+});
+  //  scroll to top when open
+   $("#accordion").on("shown.bs.collapse", e => {
+         $("html, body").animate({
+             scrollTop: $(e.target)
+               .prev()
+               .offset().top-100
+           },
+           300
+         );
+   });
  })

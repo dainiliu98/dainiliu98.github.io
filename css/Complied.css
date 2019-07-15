@@ -561,6 +561,37 @@ figure figcaption h3 {
   display: inline;
 }
 
+#about-me body {
+  background: #F9F9F9;
+}
+
+#about-me .myaccordion {
+  margin: 1rem auto;
+}
+
+#about-me .myaccordion .card {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  background: transparent;
+}
+
+#about-me .myaccordion .card-header {
+  border-bottom-color: #656768;
+  background: transparent;
+  padding-left: 0;
+}
+
+#about-me .myaccordion .btn {
+  width: 100%;
+  color: black;
+  padding: 0;
+}
+
+#about-me .myaccordion .btn-link:hover,
+#about-me .myaccordion .btn-link:focus {
+  text-decoration: none;
+  color: #3f7f7a;
+}
+
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 3rem;

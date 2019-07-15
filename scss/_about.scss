@@ -17,5 +17,42 @@
     span{
         display:inline;
     }
+
+    body {
+        background: #F9F9F9;
+    }
+
+    .myaccordion {
+    //    max-width: 900px;
+        margin: 1rem auto;
+        // box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+        // .card,
+        // .card:last-child .card-header {
+        //     border: none;
+        // }
+        .card{
+            border: 0px solid rgba(0, 0, 0, .125);
+            background: transparent;
+        }
+        .card-header {
+            border-bottom-color:$granite-gray;
+            background: transparent;
+            padding-left:0;
+        }
+        .btn {
+            width: 100%;
+            color: black;
+            padding: 0;
+        }
+        .btn-link:hover,
+        .btn-link:focus {
+            text-decoration: none;
+            color:$primary;
+        }
+
+    }
+
+
     
 }
+
