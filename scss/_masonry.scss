@@ -68,7 +68,8 @@
             transition: .3s;
             transform: scale(1);
         }
-        &:hover {
+        &:hover,
+        .hover_effect {
             img {
                 transform: scale(1.1);
             }

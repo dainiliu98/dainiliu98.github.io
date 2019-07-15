@@ -490,12 +490,14 @@ figure figcaption h3 {
           transform: scale(1);
 }
 
-#masonry .overlay-wrapper:hover img {
+#masonry .overlay-wrapper:hover img,
+#masonry .overlay-wrapper .hover_effect img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-#masonry .overlay-wrapper:hover .overlay {
+#masonry .overlay-wrapper:hover .overlay,
+#masonry .overlay-wrapper .hover_effect .overlay {
   opacity: 1;
 }
 
