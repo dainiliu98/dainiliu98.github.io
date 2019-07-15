@@ -499,11 +499,6 @@ figure figcaption h3 {
   opacity: 1;
 }
 
-#masonry .overlay-wrapper .hover {
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
-
 #masonry .overlay {
   position: absolute;
   height: 100%;
