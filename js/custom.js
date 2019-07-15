@@ -20,11 +20,10 @@
    // turn the hover off on touch screen
    // ========================================================================= /
 
-   $('.hover').on('touchstart touchend', function (e) {
-     e.preventDefault();
-     $(this).toggleClass('hover_effect');
-   });
-
+  //  $('.hover').on('touchstart touchend', function (e) {
+  //    e.preventDefault();
+  //    $(this).toggleClass('hover_effect');
+  //  });
 
    // ========================================================================= //
    // Back to top

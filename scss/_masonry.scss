@@ -69,7 +69,7 @@
             transform: scale(1);
         }
         &:hover,
-        .hover_effect {
+        &.hover_effect {
             img {
                 transform: scale(1.1);
             }
@@ -77,6 +77,10 @@
                 opacity: 1;
                 // visibility: visible;
             }
+        }
+        .hover {
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
         }
     }
 
