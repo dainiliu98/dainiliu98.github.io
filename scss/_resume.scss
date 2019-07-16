@@ -1,0 +1,114 @@
+/*---------------------
+	global
+-----------------------*/
+#resume {
+	h3 {
+		/* job names */
+		font-size: 1rem;
+		font-weight: 600;
+		margin-bottom: 0.2rem;
+		margin-top: 0px;
+	}
+
+	h4 {
+		/* job location */
+		margin: 0;
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+	}
+
+	h4~p {
+		margin: 0 auto 0 2.5rem;
+	}
+
+	h4~p:before {
+		content: "\2022";
+		color:$primary;
+		display: inline-block;
+		font-weight: bold;
+		width: 1rem;
+		margin-left: -1rem;
+	}
+	hr{
+		margin-bottom: 1rem;
+	}
+	
+}
+
+.main-left-area {
+	background:$baby-powder;
+	// padding-top: 200px;
+	// padding-right: 80px;
+	// padding-left: 80px;
+}
+
+// .main-right-area {
+// 	padding-top: 200px;
+// 	padding-left: 110px;
+// }
+
+/*SkillBar
+  -------------------------*/
+.progress-bar-container {
+	margin-bottom: 1rem;
+	width: 100%;
+	max-width: 250px;
+	height: 0.9rem;
+	background: $silver-sand;
+	background: rgba(76, 91, 97, .2);
+	overflow: hidden;
+	border-radius: 2px;
+}
+
+.progress-bar-value {
+	height: 0.9rem;
+	float: left;
+	background: rgba(76, 91, 97, 0.75);
+}
+
+.value-95 {
+	width: 95%;
+}
+
+.value-90 {
+	width: 90%;
+}
+
+.value-80 {
+	width: 80%;
+}
+
+.value-65 {
+	width: 65%;
+}
+
+.value-30 {
+	width: 30%;
+}
+
+.skills p {
+	margin-bottom: 0.2rem;
+	/* margin-top: 0.5em; */
+	/* space between skill name and skill bars*/
+}
+
+/*---------------------
+	responsive
+-----------------------*/
+.resume-content,
+.resume-date {
+	min-width: none;
+}
+
+@media (min-width: 768px) {
+		.resume-date {
+			min-width: 12rem;
+		}
+}
+
+// @media (min-width: 992px) {
+// 	section.resume-section {
+// 		padding-top: 3rem !important;
+// 		padding-bottom: 3rem !important;
+// 	}
+// }

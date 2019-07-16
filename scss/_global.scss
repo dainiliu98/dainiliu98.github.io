@@ -6,7 +6,7 @@ body {
 
   font-size:1rem;
   background-color: $gainsboro;
-  color: black;
+  color: $black;
 }
 // responsive typography
 @media (min-width: 768px) {
@@ -29,7 +29,7 @@ body {
 //horizontal rules
 //--------------------------------
 hr {
-  border: 0.5px solid $granite-gray;
+  border: 0.5px solid $outer-space;
   margin: 0.2rem 0 0;
 }
 
