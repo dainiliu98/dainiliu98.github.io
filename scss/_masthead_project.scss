@@ -11,6 +11,13 @@
   .category{
     font-size: 0.8rem;
   }
+  a {
+    color: $black;
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
   .breadcrumb {
     background: none;
     padding: 8px 0;
@@ -25,7 +32,6 @@
     }
     a:hover{
       color:$primary;
-      text-decoration: none;
     }
   }
 

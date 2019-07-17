@@ -8,6 +8,10 @@ body {
   background-color: $gainsboro;
   color: $black;
 }
+
+h1,h2{
+  font-family: $font-family-serif;
+}
 // responsive typography
 @media (min-width: 768px) {
   html{ 
@@ -122,8 +126,10 @@ button:focus {
 //--------------------------------
 // Back to top
 //--------------------------------
+
 .nav-footer {
   font-weight: 300;
+  font-family: $font-family-serif;
   a {
     color: $outer-space;
     &:hover {

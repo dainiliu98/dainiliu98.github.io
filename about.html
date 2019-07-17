@@ -17,9 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome Icons-->
   <link href="vendor/LineIcons-Package/LineIcons.min.css" rel="stylesheet" type="text/css">
-  <!-- Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+   
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <!-- Plugin CSS-->
@@ -55,7 +53,7 @@
     <div class="container">
       <a class="navbar-brand" href="index.html">Daini</a>
       <!-- toggle off canvas -->
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"  data-target="navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -72,7 +70,7 @@
               Graphic Design</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <ul>
-                <li><a class="dropdown-item" href="illustrations.html" title="illustration portfolio">Illustrations<span class="sr-only">(current)</span></a>
+                <li><a class="dropdown-item" href="illustrations.html" title="illustration portfolio">Illustrations</a>
                 </li>
                 <li><a class="dropdown-item" href="book.html" title="book design portfolio">Book projects</a></li>
                 <li><a class="dropdown-item" href="marketing.html" title="marketing pieces design">Marketing pieces</a>
@@ -95,7 +93,7 @@
           </li>
           <!-- link 4 -->
           <li class="nav-item">
-            <a class="nav-link active">About</a>
+            <a class="nav-link active"> <span class="sr-only">(current)</span> About</a>
           </li>
         </ul>
       </div>
@@ -109,14 +107,14 @@ Masthead
       <div class="row">
         <div class="col-md-6">
           <h1>About me</h1>
-          <p>All the questions you might be curious about me</p>
+          <p>All the questions you might be curious about me.</p>
         </div>
       </div>
       <ol class="breadcrumb" aria-label="Breadcrumb">
         <li class="breadcrumb-item">
           <a href="index.html"><i class="lni-home"></i> Home</a>
         </li>
-        <li class="breadcrumb-item" aria-current="page"><i class="lni-user"></i> About</li>
+        <li class="breadcrumb-item active" aria-current="page"><i class="lni-user"></i> About</li>
       </ol>
     </div>
   </header>
@@ -126,11 +124,10 @@ Masthead
 Paragraph
 ---------------------------------------------------->
   <main role="main">
-    <article role="article">
-      <section id="about-me" role="">
+    <article role="article" id="about-me" role="">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-9 col-sm-12">
+            <section class="col-lg-6 col-md-9 col-sm-12">
               <h2>Who am I?</h2>
               <p class="mb-0">
                 I am a senior at Wheaton College, IL, double majoring Biology and Studio Art. My concentrations in Studio Art are graphic design and photography. I don't have a concentration in biology. A classic liberal arts student, I am versatile, though not highly specialized in any area yet. I enjoy learning the basics of everything. Right now I like art, especially visual design, a lot more than biology. I hope to combine my knowledge in both art and sciences. I like making functional, accessible, and aesthetically pleasing designs.
@@ -139,23 +136,23 @@ Paragraph
               </p>
               <h2>What is this website?</h2>
               <p>
-                It serves two major purposes. First, obviously this is my portfolio website to show my art work. Second, this website is the first website I built from scratch without an template as a coding practice project.
+                It serves two major purposes. First, obviously this is my portfolio website to show my art work. Second, this website helped me to learn the basic front-end web programming. This is the first website I built from scratch.
                 <i class="ps">(Technically, I didn't build it "from scratch," I used Bootstrap, plugins, and code snippets.)</i>
-                This summer, I am teaching myself the basic front-end web programming for fun by watching <a href="https://www.lynda.com/learning-paths/Web/become-a-front-end-web-developer">Lynda.com</a> courses and by making this personal website. It took about a month to have the basics done, but it is undergoing constant revisions and improvement.
+                I taught by self primarily by watching <a href="https://www.lynda.com/learning-paths/Web/become-a-front-end-web-developer">Lynda.com</a>. It took about a month to have the basics done, but it is undergoing constant revisions and improvement. 
               </p>
-            </div> <!-- col div -->
-            <div class="col-lg-6 col-sm-12 mb-5">
+            </section> <!-- col div -->
+            <figure class="figure col-lg-6 col-sm-12 mb-5">
               <img class="img-fluid" src=" img/Profile.JPG" />
-            </div>
+               <figcaption class="figure-caption text-right">Photo credit: Hannah Hayes</figcaption>
+            </figure>
           </div> <!-- row div -->
           <!-- <div class="row"> -->
             <div id="accordion" class="myaccordion">
-              <div class="card">
+              <section class="card">
                 <div class="card-header" id="headingOne">
                   <button class="d-flex btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     <h2 class="mb-0"><i class="plus-minus lni-plus mr-1"></i> Where do I come from?</h2>
                   </button>
-
                 </div>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body">
@@ -163,7 +160,7 @@ Paragraph
                     </p>
                   </div>
                 </div>
-              </div>
+              </section>
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <button class="d-flex btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -192,7 +189,7 @@ Paragraph
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <button class="d-flex btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <h2 class="mb-0"></h2><i class="plus-minus lni-plus mr-1"></i>Why did I come to the U.S.?</h2>
+                    <h2 class="mb-0"><i class="plus-minus lni-plus mr-1"></i>Why did I come to the U.S.?</h2>
                   </button>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
@@ -207,7 +204,7 @@ Paragraph
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <button class="d-flex btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <h2 class="mb-0"></h2><i class="plus-minus lni-plus mr-1"></i>How to say my name? What does it mean?</h2>
+                    <h2 class="mb-0"><i class="plus-minus lni-plus mr-1"></i>How to say my name? What does it mean?</h2>
                   </button>
                 </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
@@ -223,7 +220,7 @@ Paragraph
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <button class="d-flex btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                    <h2 class="mb-0"></h2><i class="plus-minus lni-minus mr-1"></i>Bottom Line</h2>
+                    <h2 class="mb-0"><i class="plus-minus lni-minus mr-1"></i>Bottom Line</h2>
                   </button>
                 </div>
                 <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
@@ -255,7 +252,7 @@ Paragraph
             </div>
           </div>
 
-      </section> <!-- portfolio ends -->
+     
     </article>
   </main>
 

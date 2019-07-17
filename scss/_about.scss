@@ -1,19 +1,21 @@
 #about-me{
     h2{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     p{
         font-weight: 300;
         line-height: 2rem;
         text-indent: 2rem;
+        a {
+            color: $black;
+        }
     }
     .ps{
         line-height: 1rem;
         font-size: 0.8rem;
+        font-style: italic;
     }
-    a{
-        color: Black;
-    }
+    
     span{
         display:inline;
     }
@@ -41,7 +43,7 @@
         }
         .btn {
             width: 100%;
-            color: black;
+            color:$black;
             padding: 0;
         }
         .btn-link:hover,

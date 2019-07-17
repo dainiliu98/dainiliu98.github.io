@@ -9,7 +9,7 @@ $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15) !default;
 $baby-powder: #F7F7F7 !default;
 $gainsboro: #dcdcdd  !default;
 $silver-sand: #bababa  !default;
-$outer-space: #4b4b4b !default;
+$outer-space: #4C5B61 !default;
 $viridian: #3f7f7a !default;
 $black: #0B0C00 !default;
 
@@ -19,9 +19,11 @@ $primary: $viridian !default;
 
 
 // Font overrides
-$font-family-sans-serif: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+@import url('https://fonts.googleapis.com/css?family=Cormorant:300i,600|Josefin+Sans:300,300i,400&display=swap');
 
-$font-family-serif: "Cormorant Garamond", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+$font-family-sans-serif: "Josefin Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !default;
+
+$font-family-serif: "Cormorant", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
 
 
 // Custom variables

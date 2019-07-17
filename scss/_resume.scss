@@ -2,10 +2,21 @@
 	global
 -----------------------*/
 #resume {
+
+	h1,
+	h2,
+	h3 {
+		text-transform: uppercase;
+	}
+
+	h2 {
+		// font-weight: 400;
+		font-size: 1.5rem;
+	}
+
 	h3 {
 		/* job names */
 		font-size: 1rem;
-		font-weight: 600;
 		margin-bottom: 0.2rem;
 		margin-top: 0px;
 	}
@@ -13,38 +24,39 @@
 	h4 {
 		/* job location */
 		margin: 0;
+		// font-weight: 300;
+		color:$outer-space;
 		margin-bottom: 0.5rem;
 		font-size: 1rem;
 	}
-
+	
 	h4~p {
 		margin: 0 auto 0 2.5rem;
+	}
+	p{
+		font-weight:300;
 	}
 
 	h4~p:before {
 		content: "\2022";
-		color:$primary;
+		color: $outer-space;
 		display: inline-block;
 		font-weight: bold;
 		width: 1rem;
 		margin-left: -1rem;
 	}
-	hr{
+
+	hr {
 		margin-bottom: 1rem;
 	}
-	
 }
 
 .main-left-area {
-	background:$baby-powder;
-	// padding-top: 200px;
-	// padding-right: 80px;
-	// padding-left: 80px;
+	background: $baby-powder;
 }
 
 // .main-right-area {
-// 	padding-top: 200px;
-// 	padding-left: 110px;
+// 	background: $baby-powder;
 // }
 
 /*SkillBar
@@ -53,7 +65,7 @@
 	margin-bottom: 1rem;
 	width: 100%;
 	max-width: 250px;
-	height: 0.9rem;
+	height: 0.5rem;
 	background: $silver-sand;
 	background: rgba(76, 91, 97, .2);
 	overflow: hidden;
@@ -61,7 +73,7 @@
 }
 
 .progress-bar-value {
-	height: 0.9rem;
+	height: 0.5rem;
 	float: left;
 	background: rgba(76, 91, 97, 0.75);
 }
@@ -95,15 +107,10 @@
 /*---------------------
 	responsive
 -----------------------*/
-.resume-content,
-.resume-date {
-	min-width: none;
-}
-
 @media (min-width: 768px) {
-		.resume-date {
-			min-width: 12rem;
-		}
+	.resume-date {
+		min-width: 12rem;
+	}
 }
 
 // @media (min-width: 992px) {
@@ -111,4 +118,8 @@
 // 		padding-top: 3rem !important;
 // 		padding-bottom: 3rem !important;
 // 	}
+// }
+
+// @media (min-width: 768px) and (max-width: 991.98px) {
+
 // }
