@@ -245,10 +245,25 @@ button:focus {
 #masthead_portfolio {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
+  font-weight: 300;
 }
 
 #masthead_portfolio h1 {
   font-size: 2.25rem;
+  font-weight: 300;
+}
+
+#masthead_portfolio .category {
+  font-size: 0.8rem;
+}
+
+#masthead_portfolio a {
+  color: #0B0C00;
+}
+
+#masthead_portfolio a:hover {
+  color: #3f7f7a;
+  text-decoration: none;
 }
 
 #masthead_portfolio .breadcrumb {
@@ -277,7 +292,7 @@ button:focus {
   #masthead_portfolio {
     min-height: 20rem;
     padding-top: calc(72px+10rem);
-    padding-bottom: 0;
+    padding-bottom: 1rem;
   }
   #masthead_portfolio h1 {
     font-size: 3rem;
@@ -291,83 +306,27 @@ button:focus {
 }
 
 .illustrations {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 221, 0.6)), to(rgba(220, 220, 221, 0.6))), url("../img/Illustrations/Japan_Countryside_.jpg");
-  background: linear-gradient(to bottom, rgba(220, 220, 221, 0.6) 0%, rgba(220, 220, 221, 0.6) 100%), url("../img/Illustrations/Japan_Countryside_.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 221, 0.6)), to(rgba(220, 220, 221, 0.6))), url("../img/Illustrations/Japan_Countryside_.jpg") no-repeat scroll center;
+  background: linear-gradient(to bottom, rgba(220, 220, 221, 0.6) 0%, rgba(220, 220, 221, 0.6) 100%), url("../img/Illustrations/Japan_Countryside_.jpg") no-repeat scroll center;
   background-size: cover;
 }
 
 .book {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 221, 0.6)), to(rgba(220, 220, 221, 0.6))), url("../img/book/Japan_book1.png");
-  background: linear-gradient(to bottom, rgba(220, 220, 221, 0.6) 0%, rgba(220, 220, 221, 0.6) 100%), url("../img/book/Japan_book1.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 221, 0.6)), to(rgba(220, 220, 221, 0.6))) url("../img/book/Japan_book1.png") no-repeat scroll center;
+  background: linear-gradient(to bottom, rgba(220, 220, 221, 0.6) 0%, rgba(220, 220, 221, 0.6) 100%) url("../img/book/Japan_book1.png") no-repeat scroll center;
   background-size: cover;
 }
 
-#masthead_project {
-  padding-top: 8rem;
-  padding-bottom: calc(8rem - 72px);
-  font-weight: 300;
+.aboutMe {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(76, 91, 97, 0.5)), to(rgba(220, 220, 221, 0.8))), url("../img/Background/domenico-loia-hGV2TfOh0ns-unsplash.jpg") no-repeat scroll center;
+  background: linear-gradient(to bottom, rgba(76, 91, 97, 0.5) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/Background/domenico-loia-hGV2TfOh0ns-unsplash.jpg") no-repeat scroll center;
+  background-size: cover;
 }
 
-#masthead_project h1 {
-  font-size: 2.25rem;
-  font-weight: 300;
-}
-
-#masthead_project .category {
-  font-size: 0.8rem;
-}
-
-#masthead_project a {
-  color: #0B0C00;
-}
-
-#masthead_project a:hover {
-  color: #3f7f7a;
-  text-decoration: none;
-}
-
-#masthead_project .breadcrumb {
-  background: none;
-  padding: 8px 0;
-}
-
-#masthead_project .breadcrumb .active {
-  color: #3f7f7a;
-}
-
-#masthead_project .breadcrumb-item {
-  color: #4C5B61;
-}
-
-#masthead_project .breadcrumb-item a {
-  color: #4C5B61;
-}
-
-#masthead_project .breadcrumb-item a:hover {
-  color: #3f7f7a;
-}
-
-@media (min-width: 992px) {
-  #masthead_project {
-    min-height: 20rem;
-    padding-top: calc(72px+8rem);
-    padding-bottom: 0;
-  }
-  #masthead_project h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  #masthead_project h1 {
-    font-size: 3.5rem;
-  }
+.resumeHead {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(76, 91, 97, 0.5)), to(rgba(220, 220, 221, 0.8))), url("../img/Background/dnl06_2019_193CollegeAve-17.jpg") no-repeat scroll center;
+  background: linear-gradient(to bottom, rgba(76, 91, 97, 0.5) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/Background/dnl06_2019_193CollegeAve-17.jpg") no-repeat scroll center;
+  background-size: cover;
 }
 
 .img-overlay-wrapper {
@@ -591,11 +550,15 @@ button:focus {
   margin: 0 auto 0 2.5rem;
 }
 
-#resume p {
+#resume p, #resume li {
   font-weight: 300;
 }
 
-#resume h4 ~ p:before {
+#resume ul {
+  list-style-type: none;
+}
+
+#resume h4 ~ p:before, #resume li:before {
   content: "\2022";
   color: #4C5B61;
   display: inline-block;
@@ -692,6 +655,14 @@ button:focus {
 
 #about-me body {
   background: #F9F9F9;
+}
+
+#about-me .figure-caption {
+  color: #4C5B61;
+}
+
+#about-me .figure-caption a {
+  color: #4C5B61;
 }
 
 #about-me .myaccordion {

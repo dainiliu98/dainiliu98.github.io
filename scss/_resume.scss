@@ -33,11 +33,13 @@
 	h4~p {
 		margin: 0 auto 0 2.5rem;
 	}
-	p{
+	p, li{
 		font-weight:300;
 	}
-
-	h4~p:before {
+	ul{
+		list-style-type: none;
+	}
+	h4~p:before, li:before {
 		content: "\2022";
 		color: $outer-space;
 		display: inline-block;

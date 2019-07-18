@@ -4,10 +4,24 @@
 #masthead_portfolio {
   padding-top: 10rem;
   padding-bottom: calc(10rem - #{$navbar-height});
+  font-weight: 300;
   h1 {
     font-size: 2.25rem;
+    font-weight: 300;
   }
 
+  .category {
+    font-size: 0.8rem;
+  }
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
   .breadcrumb {
     background: none;
     padding: 8px 0;
@@ -30,7 +44,7 @@
     // height: 100%;
     min-height: 20rem;
     padding-top: calc(#{$navbar-height}+10rem);
-    padding-bottom: 0;
+    padding-bottom: 1rem;
     h1 {
       font-size: 3rem;
     }
@@ -45,18 +59,23 @@
 // different background images for each page
 .illustrations {
   background: linear-gradient(to bottom, #{fade-out($gainsboro, .4)} 0%, #{fade-out($gainsboro, .4)} 100%),
-  url('../img/Illustrations/Japan_Countryside_.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  url('../img/Illustrations/Japan_Countryside_.jpg') no-repeat scroll center;
   background-size: cover;
 }
 
 .book {
-  background: linear-gradient(to bottom, #{fade-out($gainsboro, .4)} 0%, #{fade-out($gainsboro, .4)} 100%),
-  url('../img/book/Japan_book1.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  background: linear-gradient(to bottom, #{fade-out($gainsboro, .4)} 0%, #{fade-out($gainsboro, .4)} 100%)
+  url('../img/book/Japan_book1.png') no-repeat scroll center;
   background-size: cover;
+}
+
+.aboutMe{
+  background: linear-gradient(to bottom, #{fade-out($outer-space, .5)} 0%, #{fade-out($gainsboro, .2)} 100%), url('../img/Background/domenico-loia-hGV2TfOh0ns-unsplash.jpg') no-repeat scroll center;
+  background-size: cover;
+}
+
+.resumeHead {
+   background: linear-gradient(to bottom, #{fade-out($outer-space, .5)} 0%, #{fade-out($gainsboro, .2)} 100%),
+   url('../img/Background/dnl06_2019_193CollegeAve-17.jpg') no-repeat scroll center;
+   background-size: cover;
 }

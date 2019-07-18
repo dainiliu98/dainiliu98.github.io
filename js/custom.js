@@ -48,13 +48,15 @@
        scrollTop: 0
      }, 500);
    });
-
-   // I disabled this because otherwise you can't click on the drop down
-   // // Closes responsive menu when a scroll trigger link is clicked
-   // $('.js-scroll-trigger').click(function () {
-   //   $('.navbar-collapse').collapse('hide');
-   // });
-
+   // ========================================================================= //
+   // go to footer
+   // ========================================================================= /
+  var $toFooter = $(".toFooter");
+  $toFooter.on('click', function (e) {
+    $("html, body").animate({
+       scrollTop: $(".footer").offset().top
+       }, 500);
+  });
    // ========================================================================= //
    // Preloader
    // ========================================================================= /
