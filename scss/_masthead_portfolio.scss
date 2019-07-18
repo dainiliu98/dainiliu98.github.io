@@ -70,12 +70,13 @@
 }
 
 .aboutMe{
-  background: linear-gradient(to bottom, #{fade-out($outer-space, .5)} 0%, #{fade-out($gainsboro, .2)} 100%), url('../img/Background/domenico-loia-hGV2TfOh0ns-unsplash.jpg') no-repeat scroll center;
+  background: linear-gradient(to bottom, #{fade-out($silver-sand, .1)} 0%, #{fade-out($gainsboro, .1)} 100%),
+  url('../img/Background/domenico-loia-hGV2TfOh0ns-unsplash.jpg') no-repeat scroll center;
   background-size: cover;
 }
 
 .resumeHead {
-   background: linear-gradient(to bottom, #{fade-out($outer-space, .5)} 0%, #{fade-out($gainsboro, .2)} 100%),
+   background: linear-gradient(to bottom, #{fade-out($silver-sand, .3)} 0%, #{fade-out($gainsboro, .3)} 100%),
    url('../img/Background/dnl06_2019_193CollegeAve-17.jpg') no-repeat scroll center;
    background-size: cover;
 }
