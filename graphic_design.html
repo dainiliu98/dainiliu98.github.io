@@ -7,25 +7,23 @@
   <meta charset="utf-8">
   <meta name="author" content="Daini Liu">
   <meta name="description" content="Portfolio website for graphic designer and photographer Daini Liu">
-  <meta name="og:title" property="og:title" content="Daini's online art portfolio">
+  <meta name="og:title" property="og:title" content="Daini's online art portfolio, Graphic Design page">
 
-  <title>Daini Liu | Portfolio | Illustrations| Self-portrait</title>
+  <title>Daini Liu | Portfolio | Graphic Design</title>
 
   <!-- favicons -->
   <link rel="icon" href="img/favicons/favicon-16x16.png" type="image/x-icon">
   <!-- Mobile Specific Metadata-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Font Awesome Icons-->
+  <!-- Icons-->
   <link href="vendor/LineIcons-Package/LineIcons.min.css" rel="stylesheet" type="text/css">
-   
+
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <!-- Plugin CSS-->
-  <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="vendor/aos/aos.css">
 
-
-  <!-- customized CSS-->
+  <!-- customized CSS -->
   <link rel="stylesheet" href="css/Complied.min.css">
 
 </head>
@@ -53,9 +51,7 @@
     <div class="container">
       <a class="navbar-brand" href="index.html">Daini</a>
       <!-- toggle off canvas -->
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-         data-target=".navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarfluid" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -67,12 +63,12 @@
           </li>
           <!-- link 2 drop down 1 -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="graphic_design.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Graphic Design</a>
+            <a class="nav-link dropdown-toggle active" href="graphic_design.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Graphic Design<span class="sr-only">(current)</span></a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <ul>
-                <li><a class="dropdown-item" href="illustrations.html"
-                    title="illustration portfolio">Illustrations</a>
+                <li>
+                  <a class="dropdown-item" href="illustrations.html" title="illustration portfolio">Illustrations</a>
                 </li>
                 <li><a class="dropdown-item" href="book.html" title="book design portfolio">Book projects</a></li>
                 <li><a class="dropdown-item" href="marketing.html" title="marketing pieces design">Marketing pieces</a>
@@ -105,76 +101,52 @@
   <!--------------------------------------------------
 Masthead
 ---------------------------------------------------->
-  <header id="masthead_portfolio" class="self-portrait" role="banner">
+  <header id="masthead_portfolio" class="graphic-design" role="banner">
     <div class="container" data-aos="fade-right" data-aos-delay="900">
-      <ol class="breadcrumb" aria-label="Breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html"><i class="lni-home"></i> Home</a>
-        </li>
-        <li class="breadcrumb-item">
-          <a href="graphic_design.html"><i class="lni-bulb"></i> Graphic Design</a>
-        </li>
-        <li class="breadcrumb-item">
-          <a href="illustrations.html"><i class="lni-pencil"></i> Illustrations</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page"><i class="lni-folder"></i> project</li>
-      </ol>
       <div class="row">
-        <div class="col-md-6">
-          <h1>Self-Portraits</h1>
-          <p class="category">
-            Summer, 2019 | Category: Digital Illustration | Adobe Illustrator
-          </p>
-        </div>
-        <div class="col-md-6">
-          <p class="mt-3"> This is my personal fun project. I am learning applying grainy texture in Adobe Illustrator.
-            It is a four-part series that has not been finished yet. </p>
+        <div class="col-md-12">
+          <h1>Graphic Design</h1>
+          <p>Click each category to see more.</p>
+          <ol class="breadcrumb" aria-label="Breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html"><i class="lni-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+              <i class="lni-bulb"></i> Graphic Design
+            </li>
+          </ol>
         </div>
       </div>
     </div>
   </header>
 
-
   <!--------------------------------------------------
-project
+gallery
 ---------------------------------------------------->
-  <main role="main">
-      <section class="container mt-5" id="single_project" role="gallery">
-          <div class="row">
-            <div class="col-md-6 p-0">
-              <img class="img-fluid" src=" img/Illustrations/self-portrait.png" />
-            </div>
-            <div class="col-md-6 p-0">
-              <img class="img-fluid" src=" img/Illustrations/self-portrait.png" />
-            </div>
-            <div class="col-md-6 p-0">
-              <img class="img-fluid" src=" img/Illustrations/self-portrait.png" />
-            </div>
-            <div class="col-md-6 p-0">
-              <img class="img-fluid" src=" img/Illustrations/self-portrait.png" />
-            </div>
-          </div>
-          <!-- back to top -->
-          <div class="row mt-5 mb-3 nav-footer">
-              <div class="col">
-              <a href="illustrations.html"> <i class="lni-angle-double-left"></i> Previous&nbsp;page </a>
-              </div>
-              <div class="col text-center back-to-top">
-              <a href="#page-top"> <i class="lni-angle-double-up"></i> Back&nbsp;to&nbsp;top </a>
-              </div>
-              <div class="col text-right">
-                <a href="#"> <i class="lni-angle-double-right"></i> Next&nbsp;Project </a>
-              </div>
-          </div>
-      </section> <!-- portfolio ends -->
- 
+  <main id="filter-gallery" role="main">
+    <section class="container ">
+      <div class="example-pager "></div>
+      <div class="cycle-slideshow" data-cycle-pager=".example-pager" data-cycle-pager-event="mouseover">
+
+        <img src="img/Illustrations/dnl03_2019_Ink Drawing.jpg" class="img-fluid" data-cycle-pager-template="<a href=&quot;Illustrations.html&quot;> Illustrations</a>">
+
+        <img src="img/book/Japan_book2.png" class="img-fluid" data-cycle-pager-template="<a href=&quot;book.html&quot;>Book</a>">
+
+        <img src="img/marketing/Snow_ Camp_brochure.png" class="img-fluid" data-cycle-pager-template="<a href=&quot;marketing.html&quot;>Marketing</a>">
+
+        <img src="img/other/big_text_poster.jpg" class="img-fluid" data-cycle-pager-template="<a href=&quot;other.html&quot;>Other</a>">
+      </div>
+
+
+    </section>
   </main>
+
 
   <!--------------------------------------------------
 footer
 ---------------------------------------------------->
   <footer class="footer text-center" role="contentinfo">
-    <div class="container" data-aos="fade-up" data-aos-duration="600">
+    <div class="container">
       <ul class="list-inline">
         <li class="list-inline-item">
           <a class="social-link rounded-circle" href="https://dainiliu.net" title="My another website" target="_blank">
@@ -182,14 +154,12 @@ footer
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle" href="https://www.instagram.com/daini.photography/?hl=en"
-            title="Instagram" target="_blank">
+          <a class="social-link rounded-circle" href="https://www.instagram.com/daini.photography/?hl=en" title="Instagram" target="_blank">
             <i class="lni-instagram"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle" href="https://www.linkedin.com/in/daini-liu-407470157" title="Linkedin"
-            target="_blank">
+          <a class="social-link rounded-circle" href="https://www.linkedin.com/in/daini-liu-407470157/" title="Linkedin" target="_blank">
             <i class="lni-linkedin"></i>
           </a>
         </li>
@@ -206,17 +176,15 @@ footer
   <!-- Bootstrap core JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- bootstrap bundle includes popper -->
-
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-   <!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script>-->
-  <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
   <script src="vendor/aos/aos.js"></script>
   <script src="vendor/isotope/isotope.pkgd.min.js"></script>
   <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <!-- <script src="vendor/packery/packery.min.js"></script> -->
+  <script src="vendor/cycle/cycle2.min.js"></script>
+
 
   <!-- Custom scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

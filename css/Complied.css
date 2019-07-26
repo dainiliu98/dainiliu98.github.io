@@ -167,7 +167,7 @@ button:focus {
 }
 
 .dropdown-item:hover, .dropdown-item:active, .dropdown-item.active {
-  color: #3f7f7a;
+  color: #3f7f7a !important;
   background-color: transparent;
 }
 
@@ -365,6 +365,14 @@ button:focus {
 .resumeHead {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.7)), to(rgba(220, 220, 221, 0.7))), url("../img/Background/dnl06_2019_193CollegeAve-17.jpg") no-repeat scroll center;
   background: linear-gradient(to bottom, rgba(186, 186, 186, 0.7) 0%, rgba(220, 220, 221, 0.7) 100%), url("../img/Background/dnl06_2019_193CollegeAve-17.jpg") no-repeat scroll center;
+  background-size: cover;
+}
+
+.graphic-design {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.95)), to(rgba(220, 220, 221, 0.9))), url("../img/Illustrations/dnl12_2018_Creativity and Design-4-2.jpg") no-repeat scroll center;
+  background: linear-gradient(to bottom, rgba(186, 186, 186, 0.95) 0%, rgba(220, 220, 221, 0.9) 100%), url("../img/Illustrations/dnl12_2018_Creativity and Design-4-2.jpg") no-repeat scroll center;
+  -webkit-box-shadow: 0 -20px 15px 5px #dcdcdd inset;
+          box-shadow: 0 -20px 15px 5px #dcdcdd inset;
   background-size: cover;
 }
 
@@ -729,6 +737,69 @@ button:focus {
 #about-me .myaccordion .btn-link:focus {
   text-decoration: none;
   color: #3f7f7a;
+}
+
+#filter-gallery {
+  /* pager */
+}
+
+#filter-gallery .cycle-slideshow {
+  margin: 1.5rem auto;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  /* in case script does not load */
+}
+
+#filter-gallery .cycle-slideshow img:first-child {
+  position: static;
+  z-index: 100;
+}
+
+#filter-gallery .example-pager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 500;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+#filter-gallery .example-pager a {
+  font-size: 1rem;
+  font-weight: 300;
+  display: inline-block;
+  padding: 6px 24px;
+  color: #dcdcdd;
+  background-color: #3f7f7a;
+}
+
+#filter-gallery .example-pager a:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+#filter-gallery .example-pager a:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+#filter-gallery .example-pager a.cycle-pager-active, #filter-gallery .example-pager a:hover {
+  background-color: #1d3b39;
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  #filter-gallery .example-pager a {
+    font-size: 1.3rem;
+  }
 }
 
 footer.footer {
