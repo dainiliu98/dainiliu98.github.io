@@ -376,6 +376,14 @@ button:focus {
   background-size: cover;
 }
 
+.book_projects {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.9)), to(rgba(220, 220, 221, 0.8))), url("../img/book/unit1_cover.png") no-repeat scroll center;
+  background: linear-gradient(to bottom, rgba(186, 186, 186, 0.9) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/book/unit1_cover.png") no-repeat scroll center;
+  -webkit-box-shadow: 0 -20px 15px 5px #dcdcdd inset;
+          box-shadow: 0 -20px 15px 5px #dcdcdd inset;
+  background-size: cover;
+}
+
 .img-overlay-wrapper {
   position: relative;
   overflow: hidden;
