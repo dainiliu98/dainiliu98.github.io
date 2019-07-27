@@ -216,7 +216,8 @@ button:focus {
             box-shadow: none;
     background-color: transparent;
   }
-  #mainNav .navbar-brand {
+  #mainNav .navbar-brand,
+  #mainNav .dropdown-item {
     color: #dcdcdd;
   }
   #mainNav .navbar-nav .nav-link {
@@ -237,6 +238,7 @@ button:focus {
     background-color: #dcdcdd;
   }
   #mainNav.navbar-scrolled .navbar-brand,
+  #mainNav.navbar-scrolled .dropdown-item,
   #mainNav.navbar-scrolled .nav-link {
     color: #4C5B61;
   }
@@ -379,6 +381,14 @@ button:focus {
 .book_projects {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.9)), to(rgba(220, 220, 221, 0.8))), url("../img/book/unit1_cover.png") no-repeat scroll center;
   background: linear-gradient(to bottom, rgba(186, 186, 186, 0.9) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/book/unit1_cover.png") no-repeat scroll center;
+  -webkit-box-shadow: 0 -20px 15px 5px #dcdcdd inset;
+          box-shadow: 0 -20px 15px 5px #dcdcdd inset;
+  background-size: cover;
+}
+
+.photography {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.9)), to(rgba(220, 220, 221, 0.8))), url("../img/Studio_portraits/dnl04_2019_Dan and Mary-224-2.jpg") no-repeat scroll center;
+  background: linear-gradient(to bottom, rgba(186, 186, 186, 0.9) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/Studio_portraits/dnl04_2019_Dan and Mary-224-2.jpg") no-repeat scroll center;
   -webkit-box-shadow: 0 -20px 15px 5px #dcdcdd inset;
           box-shadow: 0 -20px 15px 5px #dcdcdd inset;
   background-size: cover;
@@ -789,14 +799,6 @@ button:focus {
   padding: 6px 24px;
   color: #dcdcdd;
   background-color: #3f7f7a;
-}
-
-#filter-gallery .example-pager a:first-child {
-  border-radius: 5px 0 0 5px;
-}
-
-#filter-gallery .example-pager a:last-child {
-  border-radius: 0 5px 5px 0;
 }
 
 #filter-gallery .example-pager a.cycle-pager-active, #filter-gallery .example-pager a:hover {

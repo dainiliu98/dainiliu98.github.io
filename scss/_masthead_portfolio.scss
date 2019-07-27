@@ -92,3 +92,9 @@
   box-shadow: 0 -20px 15px 5px $gainsboro inset;
   background-size: cover;
 }
+.photography {
+  background: linear-gradient(to bottom, #{fade-out($silver-sand, .1)} 0%, #{fade-out($gainsboro, .2)} 100%),
+  url('../img/Studio_portraits/dnl04_2019_Dan\ and\ Mary-224-2.jpg') no-repeat scroll center;
+  box-shadow: 0 -20px 15px 5px $gainsboro inset;
+  background-size: cover;
+}

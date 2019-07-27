@@ -33,12 +33,12 @@
 			color: $gainsboro;
 			background-color: $primary;
 		}
-		a:first-child{
-			border-radius: 5px 0 0 5px;
-		}
-		a:last-child {
-			border-radius: 0 5px 5px 0;
-		}
+		// a:first-child{
+		// 	border-radius: 5px 0 0 5px;
+		// }
+		// a:last-child {
+		// 	border-radius: 0 5px 5px 0;
+		// }
 
 		a.cycle-pager-active, a:hover {
 			 background-color: darken($primary, 20%);
