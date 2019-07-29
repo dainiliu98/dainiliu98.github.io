@@ -127,7 +127,7 @@
      margins: 12,
      captions: false,
      selector: 'div, div:not(.spinner)',
-    //  imgSelector: '> div > img',
+     //  imgSelector: '> div > img',
 
    });
 
@@ -157,7 +157,13 @@
    $('.cycle-slideshow').cycle({
      speed: 500,
      loader: "wait",
-     
    });
-
  });
+// scroll to bottom of a page, redirect to another page
+//  window.onscroll = function (ev) {
+//    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+//      window.setTimeout(function () {
+//        location.href = "illustrations.html";
+//      }, 3000);
+//    }
+//  };
