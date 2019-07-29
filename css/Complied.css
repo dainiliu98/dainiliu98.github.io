@@ -24,6 +24,12 @@ h1, h2 {
   }
 }
 
+p.ps {
+  line-height: 1rem;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
 hr {
   border: 0.5px solid #4C5B61;
   margin: 0.2rem 0 0;
@@ -36,11 +42,11 @@ button:focus {
 
 a.mainbtn {
   display: inline-block;
-  color: #fff;
+  color: #F7F7F7;
   font-weight: 300;
   padding: 10px 23px;
   line-height: 1;
-  border: 1px solid #fff;
+  border: 1px solid #F7F7F7;
   border-radius: 0px;
   margin: 4px;
   -webkit-transition: 0.3s;
@@ -627,12 +633,6 @@ a.mainbtn:hover {
   color: #0B0C00;
 }
 
-#about-me .ps {
-  line-height: 1rem;
-  font-size: 0.8rem;
-  font-style: italic;
-}
-
 #about-me span {
   display: inline;
 }
@@ -731,20 +731,15 @@ a.mainbtn:hover {
   }
 }
 
-.justified-gallery > a > .caption {
-  padding: 10px;
-  font-size: 0.8rem;
-}
-
-#justifiedGallery2 .overlay-wrapper {
+#justifiedGallery .overlay-wrapper {
   overflow: hidden;
 }
 
-#justifiedGallery2 .overlay-wrapper:hover .overlay {
+#justifiedGallery .overlay-wrapper:hover .overlay {
   opacity: 1;
 }
 
-#justifiedGallery2 .overlay {
+#justifiedGallery .overlay {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -756,12 +751,12 @@ a.mainbtn:hover {
   transition: .3s;
 }
 
-#justifiedGallery2 .overlay p, #justifiedGallery2 .overlay a {
+#justifiedGallery .overlay p, #justifiedGallery .overlay a {
   color: #F7F7F7;
   font-weight: 300;
 }
 
-#justifiedGallery2 .overlay a {
+#justifiedGallery .overlay a {
   display: inline-block;
   padding: 10px 23px;
   line-height: 1;
@@ -772,11 +767,11 @@ a.mainbtn:hover {
   transition: 0.3s;
 }
 
-#justifiedGallery2 .overlay a:hover {
+#justifiedGallery .overlay a:hover {
   text-decoration: none;
 }
 
-#justifiedGallery2 .overlay-content {
+#justifiedGallery .overlay-content {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);

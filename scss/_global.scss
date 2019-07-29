@@ -23,6 +23,13 @@ h1,h2{
   font-size: 1.3rem;
   }
 }
+
+
+p.ps {
+  line-height: 1rem;
+  font-size: 0.8rem;
+  font-style: italic;
+}
 //--------------------------------
 //horizontal rules
 //--------------------------------
@@ -42,11 +49,11 @@ button:focus {
 // main page masthead button
 a.mainbtn {
   display: inline-block;
-  color: $white;
+  color: $baby-powder;
   font-weight: 300;
   padding: 10px 23px;
   line-height: 1;
-  border: 1px solid $white;
+  border: 1px solid $baby-powder;
   border-radius: 0px;
   margin: 4px;
   transition: 0.3s;

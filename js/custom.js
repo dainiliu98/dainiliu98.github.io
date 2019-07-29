@@ -124,16 +124,8 @@
    $("#justifiedGallery").justifiedGallery({
      lastRow: 'nojustify',
      rowHeight: 400,
-     maxRowHeight: 800,
      margins: 12,
-     captions: true,
-   });
-   $("#justifiedGallery2").justifiedGallery({
-     lastRow: 'nojustify',
-     rowHeight: 400,
-    
-     margins: 12,
-     captions: true,
+     captions: false,
      selector: 'div, div:not(.spinner)',
     //  imgSelector: '> div > img',
 
