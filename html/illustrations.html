@@ -17,11 +17,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Icons-->
   <link href="/vendor/LineIcons-Package/LineIcons.min.css" rel="stylesheet" type="text/css">
-   
+
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
   <!-- Plugin CSS-->
-  <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/vendor/justifiedGallery/justifiedGallery.min.css">
   <link rel="stylesheet" href="/vendor/aos/aos.css">
 
 
@@ -53,7 +53,7 @@
     <div class="container">
       <a class="navbar-brand" href="/index.html">Daini</a>
       <!-- toggle off canvas -->
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"  data-target=".navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -107,145 +107,79 @@ Masthead
     <div class="container" data-aos="fade-right" data-aos-delay="900">
       <div class="row">
         <div class="col-md-12">
-            <h1>Illustrations</h1>
-            <ol class="breadcrumb" aria-label="Breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="/index.html"><i class="lni-home"></i> Home</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="graphic_design.html"><i class="lni-bulb"></i> Graphic Design</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                <i class="lni-pencil"></i> Illustrations
-              </li>
-            </ol>
-          </div>
+          <h1>Illustrations</h1>
+          <p>Click each image to see more of each project</p>
+          <ol class="breadcrumb" aria-label="Breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/index.html"><i class="lni-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="graphic_design.html"><i class="lni-bulb"></i> Graphic Design</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <i class="lni-pencil"></i> Illustrations
+            </li>
+          </ol>
         </div>
       </div>
+    </div>
   </header>
 
   <!--------------------------------------------------
 masonry
 ---------------------------------------------------->
   <main role="main">
-    <article role="article" id="masonry" role="gallery">
-        <div class="container">
-          <div class="mt-5 mb-4">
-            <h2>Projects</h2>
-            <hr>
-          </div>
-          <!-- entry -->
-          <div class="grid">
-            <div class="grid-sizer"></div>
-            <div class="grid-item">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/Japan_Countryside_.jpg" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="illustrations_japan_countryside.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/self-portrait.png" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="illustrations_self_portrait.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/ribosome.gif" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="illustrations_ribosome.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item width-horizontal-big">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/dnl03_2019_Ink Drawing.jpg" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="illustrations_ink.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <article role="article" role="gallery">
+      <div id="justifiedGallery" class="justified-gallery container mt-2 mb-3">
+        <a href="illustrations_japan_countryside.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/Japan_Countryside_.jpg" alt="Japan countryside" />
+        </a>
+        <a href="illustrations_self_portrait.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/self-portrait.png" alt="self-portrait" />
+        </a>
 
-            <div class="grid-item">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/dnl04_2019_Charcoal-3.jpg" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="project-single.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item width-horizontal">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/dnl12_2018_Creativity and Design-17-2.jpg" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="illustrations_puzzles.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item width-horizontal">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/dnl12_2018_Creativity and Design-4-2.jpg" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="illustrations_puzzles.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item width-horizontal">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/dnl12_2018_Creativity and Design-6-2.jpg" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="illustrations_puzzles.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <a href="illustrations_ribosome.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/ribosome.gif" alt="Protein Synthesis"/>
+        </a>
+        <a href="illustrations_typeAds.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/Glasses.png" alt="Typeface design"/>
+        </a>
+        <a href="illustrations_typeAds.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/Skinny Fat.png" alt="Typeface design" />
+        </a>
+         <a href="illustrations_ink.html" target="_blank">
+           <img class="img-fluid rounded" src="/img/Illustrations/dnl03_2019_Ink Drawing.jpg" alt="Ink Drawing"/>
+         </a>
+        <a href="illustrations_charcoal.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/dnl04_2019_Charcoal-3.jpg" />
+        </a>
+        <a href="illustrations_puzzles.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/dnl12_2018_Creativity and Design-17-2.jpg" />
+        </a>
+        <a href="illustrations_iconsConcealReveal.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/iconsConcealReveal-1.jpg" />
+        </a>
+        <a href="illustrations_puzzles.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/dnl12_2018_Creativity and Design-4-2.jpg" />
+        </a>
+        <a href="illustrations_iconsConcealReveal.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/iconsConcealReveal-2.jpg" />
+        </a>
 
-            <div class="grid-item width-vertical">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/Glasses.png" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="illustrations_typo_ads.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item width-vertical">
-              <div class="rounded overlay-wrapper">
-                <img src="/img/Illustrations/Skinny Fat.png" />
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <a class="btn" href="illustrations_typo_ads.html" target="_blank">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- grid div -->
-        </div> <!-- container div -->
+        <a href="illustrations_puzzles.html" target="_blank">
+          <img class="img-fluid rounded" src="/img/Illustrations/dnl12_2018_Creativity and Design-6-2.jpg" />
+        </a>
+        
+        
+
+
+
+      </div> <!-- container div -->
     </article>
   </main>
 
 
-<!--------------------------------------------------
+  <!--------------------------------------------------
 footer
 ---------------------------------------------------->
   <footer class="footer text-center" role="contentinfo">
@@ -257,14 +191,12 @@ footer
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle" href="https://www.instagram.com/daini.photography/?hl=en"
-            title="Instagram" target="_blank">
+          <a class="social-link rounded-circle" href="https://www.instagram.com/daini.photography/?hl=en" title="Instagram" target="_blank">
             <i class="lni-instagram"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle" href="https://www.linkedin.com/in/daini-liu-407470157/" title="Linkedin"
-            target="_blank">
+          <a class="social-link rounded-circle" href="https://www.linkedin.com/in/daini-liu-407470157/" title="Linkedin" target="_blank">
             <i class="lni-linkedin"></i>
           </a>
         </li>
@@ -286,12 +218,8 @@ footer
 
   <!-- Plugin JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-   <!--<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>-->
-  <!-- <script src="/vendor/typed/typed.js"></script> -->
-  <script src="/vendor/fancybox/jquery.fancybox.min.js"></script>
   <script src="/vendor/aos/aos.js"></script>
-  <script src="/vendor/isotope/isotope.pkgd.min.js"></script>
-  <script src="/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script> 
+  <script src="/vendor/justifiedGallery/jquery.justifiedGallery.min.js"></script>
 
   <!-- Custom scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

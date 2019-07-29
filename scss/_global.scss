@@ -23,12 +23,6 @@ h1,h2{
   font-size: 1.3rem;
   }
 }
-
-//Typography
-// .text-white-75 {
-//   color: fade-out($white, .25);
-// }
-
 //--------------------------------
 //horizontal rules
 //--------------------------------
@@ -44,22 +38,24 @@ hr {
 button:focus {
       outline: $primary auto 3px;
 }
-//--------------------------------
-//overlay
-//--------------------------------
-// .overlay {
 
-//   &::before {
-//     position: absolute;
-//     content: '';
-//     height: 100%;
-//     width: 100%;
-//     top: 0;
-//     left: 0;
-//     background: black;
-//     opacity: .5;
-//   }
-// }
+// main page masthead button
+a.mainbtn {
+  display: inline-block;
+  color: $white;
+  font-weight: 300;
+  padding: 10px 23px;
+  line-height: 1;
+  border: 1px solid $white;
+  border-radius: 0px;
+  margin: 4px;
+  transition: 0.3s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 //--------------------------------
 //preloader
 //--------------------------------
@@ -69,7 +65,7 @@ button:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #f5f5f5;
+    background-color: $baby-powder;
     /* change if the mask should be a color other than white */
     z-index: 1000;
     /* makes sure it stays on top */
@@ -95,7 +91,7 @@ button:focus {
 .spinner>div {
   width: 18px;
   height: 18px;
-  background-color: #333;
+  background-color: $outer-space;
 
   border-radius: 100%;
   display: inline-block;
@@ -147,7 +143,6 @@ button:focus {
   h1 {
     font-size: 15rem;
     color: $primary;
-
   }
 
   h2 {

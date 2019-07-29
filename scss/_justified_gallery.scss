@@ -1,0 +1,56 @@
+.justified-gallery>a>.caption {
+	padding: 10px;
+	font-size: 0.8rem;
+}
+
+
+
+
+#justifiedGallery2 {
+	.overlay-wrapper {
+		overflow: hidden;
+		&:hover {
+			.overlay {
+				opacity: 1;
+			}
+		}
+	}
+
+	.overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		// border-radius: inherit;
+		top: 0;
+		left: 0;
+		background: rgba($outer-space, 0.9);
+		opacity: 0;
+		transition: .3s;
+		p, a{
+			color: $baby-powder;
+			font-weight: 300;
+		}
+		a {
+			display: inline-block;
+			padding: 10px 23px;
+			line-height: 1;
+			border: 1px solid $white;
+			border-radius: 0px;
+			margin: 4px;
+			transition: 0.3s;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.overlay-content {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+}

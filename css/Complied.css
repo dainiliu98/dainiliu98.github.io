@@ -34,13 +34,30 @@ button:focus {
   outline: #3f7f7a auto 3px;
 }
 
+a.mainbtn {
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  padding: 10px 23px;
+  line-height: 1;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  margin: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a.mainbtn:hover {
+  text-decoration: none;
+}
+
 #preloader {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #f5f5f5;
+  background-color: #F7F7F7;
   /* change if the mask should be a color other than white */
   z-index: 1000;
   /* makes sure it stays on top */
@@ -66,7 +83,7 @@ button:focus {
 .spinner > div {
   width: 18px;
   height: 18px;
-  background-color: #333;
+  background-color: #4C5B61;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -408,8 +425,8 @@ button:focus {
 #portfolio figure {
   background: #F7F7F7;
   margin-bottom: 45px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(11, 12, 0, 0.04), 0 2px 10px 0 rgba(11, 12, 0, 0.06);
+          box-shadow: 0 2px 5px 0 rgba(11, 12, 0, 0.04), 0 2px 10px 0 rgba(11, 12, 0, 0.06);
 }
 
 #portfolio figure img {
@@ -446,7 +463,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(11, 12, 0, 0.7);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s;
@@ -483,104 +500,6 @@ button:focus {
 
 .fancybox-caption__body {
   font-weight: 300;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
-}
-
-.grid-sizer,
-.grid-item {
-  width: 100%;
-}
-
-.width-vertical {
-  width: 50%;
-}
-
-@media (min-width: 576px) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
-  .width-horizontal,
-  .width-horizontal-big {
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  .grid-sizer,
-  .grid-item {
-    width: 33.33%;
-  }
-  .width-horizontal {
-    width: 66.66%;
-  }
-  .width-horizontal-big {
-    width: 100%;
-  }
-}
-
-#masonry .overlay-wrapper {
-  overflow: hidden;
-  position: relative;
-}
-
-#masonry .overlay-wrapper img {
-  -webkit-transition: .3s;
-  transition: .3s;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-#masonry .overlay-wrapper:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-#masonry .overlay-wrapper:hover .overlay {
-  opacity: 1;
-}
-
-#masonry .overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-#masonry .overlay a {
-  display: inline-block;
-  color: #fff;
-  font-weight: 300;
-  padding: 10px 23px;
-  line-height: 1;
-  border: 1px solid #fff;
-  border-radius: 0px;
-  margin: 4px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#masonry .overlay a:hover {
-  text-decoration: none;
-}
-
-#masonry .overlay-content {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  text-align: center;
 }
 
 /*---------------------
@@ -810,6 +729,61 @@ button:focus {
   #filter-gallery .example-pager a {
     font-size: 1.3rem;
   }
+}
+
+.justified-gallery > a > .caption {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+#justifiedGallery2 .overlay-wrapper {
+  overflow: hidden;
+}
+
+#justifiedGallery2 .overlay-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+#justifiedGallery2 .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(76, 91, 97, 0.9);
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#justifiedGallery2 .overlay p, #justifiedGallery2 .overlay a {
+  color: #F7F7F7;
+  font-weight: 300;
+}
+
+#justifiedGallery2 .overlay a {
+  display: inline-block;
+  padding: 10px 23px;
+  line-height: 1;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  margin: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#justifiedGallery2 .overlay a:hover {
+  text-decoration: none;
+}
+
+#justifiedGallery2 .overlay-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 footer.footer {
