@@ -61,8 +61,6 @@
    }, function () {
      $(this).find('.dropdown-menu').stop(true, true).delay(500).fadeOut(500);
    });
-
-
    // Activate scrollspy to add active class to navbar items on scroll
    // $('body').scrollspy({
    //   target: '#mainNav',
@@ -159,11 +157,11 @@
      loader: "wait",
    });
  });
-// scroll to bottom of a page, redirect to another page
-//  window.onscroll = function (ev) {
-//    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-//      window.setTimeout(function () {
-//        location.href = "illustrations.html";
-//      }, 3000);
-//    }
-//  };
+ // scroll to bottom of a page, redirect to another page
+ //  window.onscroll = function (ev) {
+ //    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+ //      window.setTimeout(function () {
+ //        location.href = "illustrations.html";
+ //      }, 3000);
+ //    }
+ //  };
