@@ -125,30 +125,8 @@
      margins: 12,
      captions: false,
      selector: 'div, div:not(.spinner)',
-     //  imgSelector: '> div > img',
-
    });
 
-   // ========================================================================= //
-   //  accordion 
-   // ========================================================================= /
-   // toggle plus and minus icons
-   $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
-     $(e.target)
-       .prev()
-       .find(".plus-minus")
-       .toggleClass("lni-plus lni-minus");
-   });
-   //  scroll to top when open
-   $("#accordion").on("shown.bs.collapse", e => {
-     $("html, body").animate({
-         scrollTop: $(e.target)
-           .prev()
-           .offset().top - 100
-       },
-       300
-     );
-   });
    // ========================================================================= //
    //  cycle slides
    // ========================================================================= /
