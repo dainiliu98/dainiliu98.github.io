@@ -58,8 +58,8 @@
 
 // different background images for each page
 .illustrations {
-  background: linear-gradient(to bottom, #{fade-out($gainsboro, .4)} 0%, #{fade-out($gainsboro, .4)} 100%),
-  url('../img/Illustrations/Japan_Countryside_.jpg') no-repeat scroll center;
+  background: linear-gradient(to bottom, #{fade-out($gainsboro, .1)} 0%, #{fade-out($gainsboro, .2)} 100%),
+  url('../img/Illustrations/iconsConcealReveal-1.jpg') no-repeat scroll center;
   background-size: cover;
 }
 
@@ -96,5 +96,11 @@
   background: linear-gradient(to bottom, #{fade-out($silver-sand, .1)} 0%, #{fade-out($gainsboro, .2)} 100%),
   url('../img/Studio_portraits/dnl04_2019_Dan\ and\ Mary-224-2.jpg') no-repeat scroll center;
   box-shadow: 0 -20px 15px 5px $gainsboro inset;
+  background-size: cover;
+}
+
+.travel {
+  background: linear-gradient(to bottom, #{fade-out($silver-sand, .1)} 0%, #{fade-out($gainsboro, .2)} 100%),
+  url('../img/travel/dnl01_2019_passagesDay8-1.jpg') no-repeat scroll center;
   background-size: cover;
 }

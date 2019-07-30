@@ -1,5 +1,13 @@
 
 #justifiedGallery {
+	// .empty-gallery {
+	// 	width: 1000px !important;
+	// 	background-color: $outer-space;
+	// }
+	// .empty-text {
+	// 	position: absolute;
+	// 	margin-top: 50%;
+	// }
 	.overlay-wrapper {
 		overflow: hidden;
 		&:hover {
@@ -27,7 +35,7 @@
 			display: inline-block;
 			padding: 10px 23px;
 			line-height: 1;
-			border: 1px solid $white;
+			border: 1px solid $baby-powder;
 			border-radius: 0px;
 			margin: 4px;
 			transition: 0.3s;

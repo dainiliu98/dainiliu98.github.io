@@ -8,7 +8,8 @@ body {
   color: #0B0C00;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Cormorant", "Garamond", "Georgia", "Times New Roman", Times, serif;
 }
 
@@ -122,10 +123,16 @@ button:focus {
 
 .nav-footer a {
   color: #4C5B61;
+  padding-bottom: 8px;
+  border-bottom: 0.5px solid #4C5B61;
+  margin: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav-footer a:hover {
   color: #3f7f7a;
+  border-bottom: 0.5px solid #3f7f7a;
   text-decoration: none;
 }
 
@@ -353,8 +360,8 @@ button:focus {
 }
 
 .illustrations {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 221, 0.6)), to(rgba(220, 220, 221, 0.6))), url("../img/Illustrations/Japan_Countryside_.jpg") no-repeat scroll center;
-  background: linear-gradient(to bottom, rgba(220, 220, 221, 0.6) 0%, rgba(220, 220, 221, 0.6) 100%), url("../img/Illustrations/Japan_Countryside_.jpg") no-repeat scroll center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 221, 0.9)), to(rgba(220, 220, 221, 0.8))), url("../img/Illustrations/iconsConcealReveal-1.jpg") no-repeat scroll center;
+  background: linear-gradient(to bottom, rgba(220, 220, 221, 0.9) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/Illustrations/iconsConcealReveal-1.jpg") no-repeat scroll center;
   background-size: cover;
 }
 
@@ -400,19 +407,10 @@ button:focus {
   background-size: cover;
 }
 
-a.mainbtn {
-  display: inline-block;
-  color: #dcdcdd;
-  background-color: #4C5B61;
-  font-weight: 300;
-  padding: 10px 23px;
-  line-height: 1;
-  margin-right: 6px;
-}
-
-a.mainbtn:hover {
-  background-color: #364044;
-  text-decoration: none;
+.travel {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.9)), to(rgba(220, 220, 221, 0.8))), url("../img/travel/dnl01_2019_passagesDay8-1.jpg") no-repeat scroll center;
+  background: linear-gradient(to bottom, rgba(186, 186, 186, 0.9) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/travel/dnl01_2019_passagesDay8-1.jpg") no-repeat scroll center;
+  background-size: cover;
 }
 
 .img-overlay-wrapper {
@@ -467,7 +465,7 @@ a.mainbtn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(11, 12, 0, 0.7);
+  background: rgba(76, 91, 97, 0.9);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s;
@@ -679,16 +677,6 @@ a.mainbtn:hover {
   /* pager */
 }
 
-#filter-gallery .empty-gallery {
-  height: 350px;
-  width: 100px;
-}
-
-#filter-gallery .empty-text {
-  position: absolute;
-  margin-top: 50%;
-}
-
 #filter-gallery .cycle-slideshow {
   margin: 1.5rem auto;
   padding: 0;
@@ -769,7 +757,7 @@ a.mainbtn:hover {
   display: inline-block;
   padding: 10px 23px;
   line-height: 1;
-  border: 1px solid #fff;
+  border: 1px solid #F7F7F7;
   border-radius: 0px;
   margin: 4px;
   -webkit-transition: 0.3s;
