@@ -123,7 +123,7 @@
 
    $("#justifiedGallery").justifiedGallery({
      lastRow: 'nojustify',
-     rowHeight: 400,
+     rowHeight: 350,
      margins: 12,
      captions: false,
      selector: 'div, div:not(.spinner)',
