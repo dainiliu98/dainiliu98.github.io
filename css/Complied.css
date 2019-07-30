@@ -40,23 +40,6 @@ button:focus {
   outline: #3f7f7a auto 3px;
 }
 
-a.mainbtn {
-  display: inline-block;
-  color: #F7F7F7;
-  font-weight: 300;
-  padding: 10px 23px;
-  line-height: 1;
-  border: 1px solid #F7F7F7;
-  border-radius: 0px;
-  margin: 4px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-a.mainbtn:hover {
-  text-decoration: none;
-}
-
 #preloader {
   position: fixed;
   top: 0;
@@ -417,6 +400,21 @@ a.mainbtn:hover {
   background-size: cover;
 }
 
+a.mainbtn {
+  display: inline-block;
+  color: #dcdcdd;
+  background-color: #4C5B61;
+  font-weight: 300;
+  padding: 10px 23px;
+  line-height: 1;
+  margin-right: 6px;
+}
+
+a.mainbtn:hover {
+  background-color: #364044;
+  text-decoration: none;
+}
+
 .img-overlay-wrapper {
   position: relative;
   overflow: hidden;
@@ -493,12 +491,13 @@ a.mainbtn:hover {
   text-decoration: none;
 }
 
-#portfolio figure figcaption {
+#portfolio figcaption {
   padding: 1rem;
   color: #4C5B61;
 }
 
-#portfolio figure figcaption h3 {
+#portfolio figcaption h3,
+#portfolio figcaption a {
   font-size: 1.2rem;
   margin: 0;
   color: #3f7f7a;

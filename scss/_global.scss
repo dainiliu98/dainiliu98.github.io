@@ -46,23 +46,6 @@ button:focus {
       outline: $primary auto 3px;
 }
 
-// main page masthead button
-a.mainbtn {
-  display: inline-block;
-  color: $baby-powder;
-  font-weight: 300;
-  padding: 10px 23px;
-  line-height: 1;
-  border: 1px solid $baby-powder;
-  border-radius: 0px;
-  margin: 4px;
-  transition: 0.3s;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 //--------------------------------
 //preloader
 //--------------------------------
