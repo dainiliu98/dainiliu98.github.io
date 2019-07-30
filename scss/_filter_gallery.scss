@@ -1,4 +1,12 @@
 #filter-gallery {
+	.empty-gallery{
+		height: 350px;
+		width: 100px;
+	}
+	.empty-text{
+		position: absolute;
+		margin-top:50%;
+	}
 	.cycle-slideshow {
 		margin: 1.5rem auto;
 		padding: 0;

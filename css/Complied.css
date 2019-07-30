@@ -679,6 +679,16 @@ a.mainbtn:hover {
   /* pager */
 }
 
+#filter-gallery .empty-gallery {
+  height: 350px;
+  width: 100px;
+}
+
+#filter-gallery .empty-text {
+  position: absolute;
+  margin-top: 50%;
+}
+
 #filter-gallery .cycle-slideshow {
   margin: 1.5rem auto;
   padding: 0;
