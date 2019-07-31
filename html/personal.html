@@ -7,12 +7,12 @@
   <meta charset="utf-8">
   <meta name="author" content="Daini Liu">
   <meta name="description" content="Portfolio website for graphic designer and photographer Daini Liu">
-  <meta name="og:title" property="og:title" content="Daini's online art portfolio, photography page">
+  <meta name="og:title" property="og:title" content="Daini's online art portfolio, personal photography page">
 
-  <title>Daini Liu | Portfolio | Photography</title>
+  <title>Daini Liu | Portfolio | Personal Photography Projects</title>
 
   <!-- favicons -->
-  <link rel="icon" href="//img/favicons/favicon-16x16.png" type="image/x-icon">
+  <link rel="icon" href="/img/favicons/favicon-16x16.png" type="image/x-icon">
   <!-- Mobile Specific Metadata-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Icons-->
@@ -21,13 +21,13 @@
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
   <!-- Plugin CSS-->
-  <link rel="stylesheet" href="/vendor/aos/aos.css">
+  <link rel="stylesheet" href="/vendor/justifiedGallery/justifiedGallery.min.css">
 
-  <!-- customized CSS -->
+  <link rel="stylesheet" href="/vendor/aos/aos.css">
+  <!-- customized CSS-->
   <link rel="stylesheet" href="/css/Complied.min.css">
 
 </head>
-
 
 <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,7 +51,7 @@
     <div class="container">
       <a class="navbar-brand" href="/index.html">Daini</a>
       <!-- toggle off canvas -->
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarfluid" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -79,14 +79,14 @@
           </li>
           <!-- link 3 drop down 2 -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="photography.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Photography<span class="sr-only">(current)</span></a>
+            <a class="nav-link dropdown-toggle" href="photography.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Photography</a>
             <div class="dropdown-menu" aria-labelledby="dropdown02">
               <ul>
                 <li><a class="dropdown-item" href="portraits.html">Portraits</a></li>
                 <li><a class="dropdown-item" href="travel.html">Travel</a></li>
                 <li><a class="dropdown-item" href="events.html">Events</a></li>
-                <li><a class="dropdown-item" href="personal.html">Personal</a></li>
+                <li><a class="dropdown-item" href="personal.html">Personal <span class="sr-only">(current)</span></a></li>
               </ul>
             </div>
           </li>
@@ -104,45 +104,106 @@ Masthead
   <header id="masthead_portfolio" class="no-bg-img" role="banner">
     <div class="container" data-aos="fade-right" data-aos-delay="900">
       <div class="row">
-        <div class="col-md-12">
-          <h1>Photography</h1>
-          <p>Click each image/category name to see more.</p>
+        <div class="col-md-6">
+          <h1>Personal</h1>
           <ol class="breadcrumb" aria-label="Breadcrumb">
             <li class="breadcrumb-item">
               <a href="/index.html"><i class="lni-home"></i> Home</a>
             </li>
-            <li class="breadcrumb-item active">
-              <i class="lni-camera"></i> Photography
+            <li class="breadcrumb-item">
+              <a href="photography.html"><i class="lni-camera"></i> Photography</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <i class="lni-user"></i> Personal Projects
             </li>
           </ol>
+        </div>
+        <div class="col-md-6">
+          <p>
+          Personal projects = not for clients or school work. I guess all the photos in the <a href="travel.html">"travel"</a> category are also personal projects. Most of my personal passion projects started with spontaneous explorations. The spontaneity, beauty in the "mundane" is what I like about photography.
+          </p>
         </div>
       </div>
     </div>
   </header>
 
   <!--------------------------------------------------
-gallery
+Justified Gallery
 ---------------------------------------------------->
-  <main id="filter-gallery" role="main">
-    <section class="container ">
-      <div class="example-pager "></div>
-      <div class="cycle-slideshow" data-cycle-slides="> a" data-cycle-pager=".example-pager" data-cycle-pager-event="mouseover">
-        <a href="Portraits.html" data-cycle-pager-template="<a href=&quot;Portraits.html&quot;> Portraits</a>">
-          <img src="/img/portraits/dnl11_2017_SundayWalk-1.jpg" class="img-fluid">
-        </a>
-        <a href="travel.html" data-cycle-pager-template="<a href=&quot;travel.html&quot;>Travel</a>">
-          <img src="/img/travel/dnl06_2017_badland-2.jpg" class="img-fluid">
-        </a>
-        <a href="Events.html" data-cycle-pager-template="<a href=&quot;Events.html&quot;>Events</a>">
-          <img src="/img/Events/dnl08_2018_Honeyrock-1.jpg" class="img-fluid">
-        </a>
-        <a href="personal.html" data-cycle-pager-template="<a href=&quot;personal.html&quot;>Personal</a>">
-          <img src="/img/personal/dnl02_2019_lingua-68.jpg" class="img-fluid">
-        </a>
+  <main role="main">
+    <div role="gallery" id="justifiedGallery" class="container p-0 mt-2 mb-3">
+      
+      <div class="rounded overlay-wrapper">
+        <img class="img-fluid" src="/img/Studio_portraits/dnl023_2019_Daini Self portrait-21.jpg">
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>My inner self</p>
+            <a class="btn" href="portraits_self.html">View Project</a>
+          </div>
+        </div>
       </div>
-
-
-    </section>
+      <div class="rounded overlay-wrapper">
+        <img class="img-fluid" src="/img/Studio_portraits/dnl023_2019_Daini Self portrait-57.jpg">
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>My inner self</p>
+            <a class="btn" href="portraits_self.html">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="rounded overlay-wrapper">
+        <img class="img-fluid" src="/img/Studio_portraits/dnl023_2019_Daini Self portrait-76.jpg">
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>My inner self</p>
+            <a class="btn" href="portraits_self.html">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="rounded overlay-wrapper">
+        <img class="img-fluid" src="/img/Studio_portraits/dnl023_2019_Daini Self portrait-90.jpg">
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>My inner self</p>
+            <a class="btn" href="portraits_self.html">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="rounded overlay-wrapper">
+        <img class="img-fluid" src="/img/Studio_portraits/dnl023_2019_Daini Self portrait-74.jpg">
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>My inner self</p>
+            <a class="btn" href="portraits_self.html">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="rounded overlay-wrapper">
+        <img class="img-fluid" src="/img/Studio_portraits/dnl023_2019_Daini Self portrait-66.jpg">
+        <div class="overlay">
+          <div class="overlay-content">
+            <p>My inner self</p>
+            <a class="btn" href="portraits_self.html">View Project</a>
+          </div>
+        </div>
+      </div>
+     
+    </div> <!-- container div -->
+    <div class="container">
+      <!-- back to top -->
+      <div class="row mt-4 mb-4 nav-footer">
+        <div class="col p-0">
+          <a href="events.html"> <i class="lni-angle-double-left"></i> Back&nbsp;to&nbsp;Events</a>
+        </div>
+        <div class="col p-0 text-center back-to-top">
+          <a href="#page-top"> <i class="lni-angle-double-up"></i> Back&nbsp;to&nbsp;top </a>
+        </div>
+        <div class="col p-0 text-right">
+          <a href="portraits.html" title="self-portrait">
+            <i class="lni-angle-double-right"></i> Portraits&nbsp;Photography </a>
+        </div>
+      </div>
+    </div>
   </main>
 
 
@@ -180,16 +241,13 @@ footer
   <!-- Bootstrap core JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="/vendor/jquery/jquery.min.js"></script>
-  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- bootstrap bundle includes popper -->
+
 
   <!-- Plugin JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="/vendor/aos/aos.js"></script>
-  <script src=" /vendor/masonry/masonry.pkgd.min.js"></script>
-  <script src="/vendor/<!-- <script src="/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>  -->
-/<!-- <script src="/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>  -->
-.pkgd.min.js"></script>
-  <script src="/vendor/cycle/cycle2.min.js"></script>
+  <script src="/vendor/justifiedGallery/jquery.justifiedGallery.min.js"></script>
 
 
   <!-- Custom scripts

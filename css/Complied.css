@@ -359,16 +359,9 @@ button:focus {
   }
 }
 
-.illustrations {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 221, 0.9)), to(rgba(220, 220, 221, 0.8))), url("../img/Illustrations/iconsConcealReveal-1.jpg") no-repeat scroll center;
-  background: linear-gradient(to bottom, rgba(220, 220, 221, 0.9) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/Illustrations/iconsConcealReveal-1.jpg") no-repeat scroll center;
-  background-size: cover;
-}
-
-.book {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 221, 0.6)), to(rgba(220, 220, 221, 0.6))) url("../img/book/Japan_book1.png") no-repeat scroll center;
-  background: linear-gradient(to bottom, rgba(220, 220, 221, 0.6) 0%, rgba(220, 220, 221, 0.6) 100%) url("../img/book/Japan_book1.png") no-repeat scroll center;
-  background-size: cover;
+.no-bg-img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.95)), to(rgba(186, 186, 186, 0.5)));
+  background: linear-gradient(to bottom, rgba(186, 186, 186, 0.95) 0%, rgba(186, 186, 186, 0.5) 100%);
 }
 
 .aboutMe {
@@ -386,22 +379,12 @@ button:focus {
 .graphic-design {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.95)), to(rgba(220, 220, 221, 0.9))), url("../img/Illustrations/dnl12_2018_Creativity and Design-4-2.jpg") no-repeat scroll center;
   background: linear-gradient(to bottom, rgba(186, 186, 186, 0.95) 0%, rgba(220, 220, 221, 0.9) 100%), url("../img/Illustrations/dnl12_2018_Creativity and Design-4-2.jpg") no-repeat scroll center;
-  -webkit-box-shadow: 0 -20px 15px 5px #dcdcdd inset;
-          box-shadow: 0 -20px 15px 5px #dcdcdd inset;
   background-size: cover;
 }
 
 .book_projects {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.9)), to(rgba(220, 220, 221, 0.8))), url("../img/book/unit1_cover.png") no-repeat scroll center;
   background: linear-gradient(to bottom, rgba(186, 186, 186, 0.9) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/book/unit1_cover.png") no-repeat scroll center;
-  -webkit-box-shadow: 0 -20px 15px 5px #dcdcdd inset;
-          box-shadow: 0 -20px 15px 5px #dcdcdd inset;
-  background-size: cover;
-}
-
-.photography {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 186, 186, 0.9)), to(rgba(220, 220, 221, 0.8))), url("../img/Studio_portraits/dnl04_2019_Dan and Mary-224-2.jpg") no-repeat scroll center;
-  background: linear-gradient(to bottom, rgba(186, 186, 186, 0.9) 0%, rgba(220, 220, 221, 0.8) 100%), url("../img/Studio_portraits/dnl04_2019_Dan and Mary-224-2.jpg") no-repeat scroll center;
   -webkit-box-shadow: 0 -20px 15px 5px #dcdcdd inset;
           box-shadow: 0 -20px 15px 5px #dcdcdd inset;
   background-size: cover;

@@ -1,10 +1,9 @@
-
-
 // global masthead portfolio style
 #masthead_portfolio {
   padding-top: 10rem;
   padding-bottom: calc(10rem - #{$navbar-height});
   font-weight: 300;
+
   h1 {
     font-size: 2.25rem;
     font-weight: 300;
@@ -22,20 +21,25 @@
       text-decoration: none;
     }
   }
+
   .breadcrumb {
     background: none;
     padding: 8px 0;
-    .active{
-      color:$primary;
+
+    .active {
+      color: $primary;
     }
   }
-  .breadcrumb-item{
+
+  .breadcrumb-item {
     color: $outer-space;
-    a{
-      color:$outer-space;
+
+    a {
+      color: $outer-space;
     }
-    a:hover{
-      color:$primary;
+
+    a:hover {
+      color: $primary;
       text-decoration: none;
     }
   }
@@ -45,10 +49,12 @@
     min-height: 20rem;
     padding-top: calc(#{$navbar-height}+10rem);
     padding-bottom: 1rem;
+
     h1 {
       font-size: 3rem;
     }
   }
+
   @media (min-width: 1200px) {
     h1 {
       font-size: 3.5rem;
@@ -56,45 +62,35 @@
   }
 }
 
+// background with no image
+.no-bg-img {
+  background: linear-gradient(to bottom, #{fade-out($silver-sand, .05)} 0%, #{fade-out($silver-sand, .5)} 100%);
+}
+
 // different background images for each page
-.illustrations {
-  background: linear-gradient(to bottom, #{fade-out($gainsboro, .1)} 0%, #{fade-out($gainsboro, .2)} 100%),
-  url('../img/Illustrations/iconsConcealReveal-1.jpg') no-repeat scroll center;
-  background-size: cover;
-}
 
-.book {
-  background: linear-gradient(to bottom, #{fade-out($gainsboro, .4)} 0%, #{fade-out($gainsboro, .4)} 100%)
-  url('../img/book/Japan_book1.png') no-repeat scroll center;
-  background-size: cover;
-}
-
-.aboutMe{
+.aboutMe {
   background: linear-gradient(to bottom, #{fade-out($silver-sand, .1)} 0%, #{fade-out($gainsboro, .1)} 100%),
   url('../img/Background/domenico-loia-hGV2TfOh0ns-unsplash.jpg') no-repeat scroll center;
   background-size: cover;
 }
 
 .resumeHead {
-   background: linear-gradient(to bottom, #{fade-out($silver-sand, .3)} 0%, #{fade-out($gainsboro, .3)} 100%),
-   url('../img/Background/dnl06_2019_193CollegeAve-17.jpg') no-repeat scroll center;
-   background-size: cover;
+  background: linear-gradient(to bottom, #{fade-out($silver-sand, .3)} 0%, #{fade-out($gainsboro, .3)} 100%),
+  url('../img/Background/dnl06_2019_193CollegeAve-17.jpg') no-repeat scroll center;
+  background-size: cover;
 }
+
 .graphic-design {
   background: linear-gradient(to bottom, #{fade-out($silver-sand, .05)} 0%, #{fade-out($gainsboro, .1)} 100%),
   url('../img/Illustrations/dnl12_2018_Creativity\ and\ Design-4-2.jpg') no-repeat scroll center;
-  box-shadow: 0 -20px 15px 5px $gainsboro inset;
+  // box-shadow: 0 -20px 15px 5px $gainsboro inset;
   background-size: cover;
 }
+
 .book_projects {
   background: linear-gradient(to bottom, #{fade-out($silver-sand, .1)} 0%, #{fade-out($gainsboro, .2)} 100%),
   url('../img/book/unit1_cover.png') no-repeat scroll center;
-  box-shadow: 0 -20px 15px 5px $gainsboro inset;
-  background-size: cover;
-}
-.photography {
-  background: linear-gradient(to bottom, #{fade-out($silver-sand, .1)} 0%, #{fade-out($gainsboro, .2)} 100%),
-  url('../img/Studio_portraits/dnl04_2019_Dan\ and\ Mary-224-2.jpg') no-repeat scroll center;
   box-shadow: 0 -20px 15px 5px $gainsboro inset;
   background-size: cover;
 }
