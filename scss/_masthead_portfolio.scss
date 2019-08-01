@@ -75,14 +75,9 @@
   background-size: cover;
 }
 
-.resumeHead {
-  background: linear-gradient(to bottom, #{fade-out($silver-sand, .3)} 0%, #{fade-out($gainsboro, .3)} 100%),
-  url('../img/Background/dnl06_2019_193CollegeAve-17.jpg') no-repeat scroll center;
-  background-size: cover;
-}
 
 .graphic-design {
-  background: linear-gradient(to bottom, #{fade-out($silver-sand, .05)} 0%, #{fade-out($gainsboro, .1)} 100%),
+  background: linear-gradient(to bottom, #{fade-out($silver-sand, .1)} 0%, #{fade-out($gainsboro, .2)} 100%),
   url('../img/Illustrations/dnl12_2018_Creativity\ and\ Design-4-2.jpg') no-repeat scroll center;
   // box-shadow: 0 -20px 15px 5px $gainsboro inset;
   background-size: cover;
