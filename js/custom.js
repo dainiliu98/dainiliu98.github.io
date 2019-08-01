@@ -52,7 +52,6 @@
    $('body').delay(550).css({
      'overflow': 'visible'
    });
-
    // ========================================================================= //
    // Nav link open on hover
    // ========================================================================= /
@@ -61,11 +60,6 @@
    }, function () {
      $(this).find('.dropdown-menu').stop(true, true).delay(500).fadeOut(500);
    });
-   // Activate scrollspy to add active class to navbar items on scroll
-   // $('body').scrollspy({
-   //   target: '#mainNav',
-   //   offset: 75
-   // });
    // ========================================================================= //
    //  Collapse Navbar 
    // ========================================================================= /
@@ -95,30 +89,8 @@
    });
 
    // ========================================================================= //
-   //  filter
-   // ========================================================================= /
-   $(".filter-button").click(function () {
-     var value = $(this).attr('data-filter');
-     if (value == "all") {
-       //$('.filter').removeClass('hidden');
-       $('.filter').show('1000');
-     } else {
-       //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-       //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-       $(".filter").not('.' + value).hide('2000');
-       $('.filter').filter('.' + value).show('2000');
-     }
-   });
-
-   if ($(".filter-button").removeClass("active")) {
-     $(this).removeClass("active");
-   }
-   $(this).addClass("active");
-
-   // ========================================================================= //
    //  justified Gallery
    // ========================================================================= /
-
    $("#justifiedGallery").justifiedGallery({
      lastRow: 'nojustify',
      rowHeight: 350,
@@ -135,11 +107,3 @@
      loader: "wait",
    });
  });
- // scroll to bottom of a page, redirect to another page
- //  window.onscroll = function (ev) {
- //    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
- //      window.setTimeout(function () {
- //        location.href = "illustrations.html";
- //      }, 3000);
- //    }
- //  };

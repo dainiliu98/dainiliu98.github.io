@@ -1,13 +1,6 @@
-
-
 // The portfolio section in the main page
-.img-overlay-wrapper {
-	position: relative;
-	overflow: hidden;
-}
-
+.img-overlay-wrapper,
 .image-wrapper {
-	padding-bottom: 100%;
 	position: relative;
 	overflow: hidden;
 }
@@ -15,13 +8,10 @@
 #portfolio {
 	figure {
 		background: $baby-powder;
-		margin-bottom: 45px;
+		margin-bottom: 3rem;
 		box-shadow: 0 2px 5px 0 rgba($black, 0.04), 0 2px 10px 0 rgba($black, 0.06);
 
 		img {
-			position: absolute;
-			max-height: 140%;
-			max-width: 150%;
 			transform: scale(1);
 			transition: 0.3s;
 		}
@@ -55,7 +45,6 @@
 				font-weight: 300;
 				color: $baby-powder;
 				padding: 10px 23px;
-				line-height: 1;
 				border: 1px solid $baby-powder;
 				border-radius: 0px;
 				margin: 4px;

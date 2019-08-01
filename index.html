@@ -23,7 +23,6 @@
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <!-- Plugin CSS-->
-  <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="vendor/aos/aos.css">
 
   <!-- customized CSS-->
@@ -72,12 +71,9 @@
               Graphic Design</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <ul>
-                <li><a class="dropdown-item" href="html/illustrations.html" title="illustration portfolio">Illustrations</a>
-                </li>
+                <li><a class="dropdown-item" href="html/illustrations.html" title="illustration portfolio">Illustrations</a></li>
+                <li><a class="dropdown-item" href="html/marketing.html" title="marketing pieces design">Marketing pieces</a></li>
                 <li><a class="dropdown-item" href="html/book.html" title="book design portfolio">Book projects</a></li>
-                <li><a class="dropdown-item" href="html/marketing.html" title="marketing pieces design">Marketing pieces</a>
-                </li>
-                <li><a class="dropdown-item" href="html/other.html" title="other graphic design">Other Designs</a></li>
               </ul>
             </div>
           </li>
@@ -88,8 +84,7 @@
               <ul>
                 <li><a class="dropdown-item" href="html/portraits.html">Portraits</a></li>
                 <li><a class="dropdown-item" href="html/travel.html">Travel</a></li>
-                <li><a class="dropdown-item" href="html/events.html
-">Events</a></li>
+                <li><a class="dropdown-item" href="html/events.html">Events</a></li>
                 <li><a class="dropdown-item" href="html/personal.html">Personal</a></li>
               </ul>
             </div>
@@ -130,127 +125,181 @@ Masthead
 Portfolio Section
 ---------------------------------------------------->
   <main role="main">
-    <article role="article">
-      <section id="portfolio" role="gallery">
-        <div class="container">
-          <div class="mt-5 mb-4" data-aos="fade-down">
-            <h2>Project Categories</h2>
-            <hr>
-          </div>
-          <div class="row">
-            <!-- first img -->
-            <div class="col-md-4 col-sm-6">
-              <figure data-aos="fade-in" data-aos-duration="600">
-                <div class="img-overlay-wrapper">
-                  <div class="image-wrapper">
-                    <img src="img/Illustrations/self-portrait.png" alt="Digital Illustration of myself drawing">
-                    <div class="overlay">
-                      <a class="btn" href="html/illustrations.html" target="_blank">See more examples</a>
-                    </div>
-                  </div>
-                </div>
-                <figcaption class="mt-0">
-                  <h3><a href="html/illustrations.html" target="_blank">Illustrations</a></h3>
-                  <p class="mb-0">From digital illustrations to pen drawings to animation</p>
-                </figcaption>
-              </figure>
+    <section id="portfolio" class="container" role="gallery">
+      <div class="mt-5 mb-4" data-aos="fade-down">
+        <h2>Project Categories</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <!-- first img -->
+        <div class="col-md-6">
+          <figure>
+            <div class="img-overlay-wrapper">
+              <div class="image-wrapper cycle-slideshow" data-cycle-slides="> a" data-cycle-auto-height="3:2">
+                <a href="html/illustrations.html" target="_blank">
+                  <img class="img-fluid" src="img/Illustrations/self-portrait-2.png" alt="Digital Illustration of myself drawing">
+                </a>
+                <a href="html/illustrations.html" target="_blank">
+                  <img class="img-fluid" src="img/Illustrations/Japan_Countryside_small.jpg" alt="">
+                </a>
+                <a href="html/illustrations.html" target="_blank">
+                  <img class="img-fluid" src="img/Illustrations/dnl03_2019_Ink Drawing.jpg" alt="Ink Drawing">
+                </a>
+              </div>
             </div>
-            <!-- second img -->
-            <div class="col-md-4 col-sm-6">
-              <figure data-aos="fade-in" data-aos-duration="600">
-                <div class="img-overlay-wrapper">
-                  <div class="image-wrapper">
-                    <img src="img/book/Unit 3.png" alt="Textbook design demo">
-                    <div class="overlay">
-                      <a target="_blank" class="btn" href="html/book.html">See more examples</a>
-                    </div>
-                  </div>
-                  <figcaption class="mt-0 ">
-                    <h3><a href="html/book.html" target="_blank">Book Design</a></h3>
-                    <p class="mb-0">From illustrations to layout to cover design to printing</p>
-                  </figcaption>
-              </figure>
+            <figcaption class="mt-0">
+              <h3><a href="html/illustrations.html" target="_blank">Illustrations</a></h3>
+              <p class="mb-0">From digital illustrations to pen drawings to animation</p>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- second img -->
+        <div class="col-md-6">
+          <figure>
+            <div class="img-overlay-wrapper">
+              <div class="image-wrapper cycle-slideshow" data-cycle-slides="> a" data-cycle-auto-height="3:2">
+                <a href="html/book.html" target="_blank">
+                  <img class="img-fluid" src="img/book/Japan_book1.png" alt="">
+                </a>
+                <a href="html/book.html" target="_blank">
+                  <img class="img-fluid" src="img/book/Unit 3.png" alt="">
+                </a>
+                <a href="html/book.html" target="_blank">
+                  <img class="img-fluid" src="img/book/unit1_cover.png" alt="MuKappa Snow Camp brochure">
+                </a>
+              </div>
             </div>
-            <!-- third img -->
-            <div class="col-md-4 col-sm-6">
-              <figure data-aos="fade-in" data-aos-duration="600">
-                <div class="img-overlay-wrapper">
-                  <div class="image-wrapper">
-                    <img src="img/marketing/Snow_ Camp_brochure.png" alt="MuKappa Snow Camp brochure">
-                    <div class="overlay">
-                      <a target="_blank" class="btn" href="html/marketing.html">See more examples</a>
-                    </div>
-                  </div>
-                </div>
-                <figcaption class="mt-0">
-                  <h3><a href="html/marketing.html" target="_blank">Marketing Pieces</a></h3>
-                  <p class="mb-0">From posters to brochures to social media</p>
-                </figcaption>
-              </figure>
+            <figcaption class="mt-0 ">
+              <h3><a href="html/book.html" target="_blank">Book Design</a></h3>
+              <p class="mb-0">From illustrations to layout to cover design to printing</p>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- third img -->
+        <div class="col-md-6">
+          <figure>
+            <div class="img-overlay-wrapper">
+              <div class="image-wrapper cycle-slideshow" data-cycle-slides="> a" data-cycle-auto-height="3:2">
+                <a href="html/marketing.html" target="_blank">
+                  <img class="img-fluid" src="img/marketing/Snow_ Camp_brochure.png" alt="MuKappa Snow Camp brochure">
+                  <img class="img-fluid" src="img/mar" alt="">
+                </a>
+                <a href="html/marketing.html" target="_blank">
+                  <img class="img-fluid" src="img/marketing/GradFestPoster.png" alt="">
+                </a>
+                <a href="html/marketing.html" target="_blank">
+                  <img class="img-fluid" src="img/marketing/Homecoming designs on shirts_Page_1.png" alt="T-shirt Design">
+                </a>
+              </div>
             </div>
-            <!-- fourth img -->
-            <div class="col-md-4 col-sm-6">
-              <figure data-aos="fade-in" data-aos-duration="600">
-                <div class="img-overlay-wrapper">
-                  <div class="image-wrapper">
-                    <img src="img/Studio_portraits/dnl04_2019_Dr. Alison Gibson_square 2.jpg" alt="">
-                    <div class="overlay">
-                      <a target="_blank" class="btn" href="html/Portraits.html">See more examples</a>
-                    </div>
-                  </div>
-                </div>
-                <figcaption class="mt-0">
-                  <h3><a href="html/Portraits.html" target="_blank">Portraits</a></h3>
-                  <p class="mb-0">From serious studio to candid outdoor to head shots</p>
-                </figcaption>
-              </figure>
-            </div>
-            <!-- fifth img -->
-            <div class="col-md-4 col-sm-6">
-              <figure data-aos="fade-in" data-aos-duration="600">
-                <div class="img-overlay-wrapper">
-                  <div class="image-wrapper">
-                    <img src="img/travel/dnl07_2018_rainier-square.jpg" alt="">
-                    <div class="overlay">
-                      </a>
-                      <a target="_blank" class="btn" href="html/travel.html">See more examples</a>
-                    </div>
-                  </div>
-                </div>
-                <figcaption class="mt-0">
-                  <h3><a href="html/travel.html" target="_blank">Travel Photography</a></h3>
-                  <p class="mb-0">From landscape to wildlife to city and people</p>
-                </figcaption>
-              </figure>
-            </div>
-            <!--sixth img -->
-            <div class="col-md-4 col-sm-6">
-              <figure data-aos="fade-in" data-aos-duration="600">
-                <div class="img-overlay-wrapper">
-                  <div class="image-wrapper">
-                    <img src="img/weddings/dnl06_2017_YinYin-3.jpg" alt="">
-                    <div class="overlay">
-                      <a target="_blank" class="btn" href="html/events.html">See more examples</a>
-                    </div>
-                  </div>
-                </div>
-                <figcaption class="mt-0">
-                  <h3><a href="html/events.html" target="_blank">Event Photography</a></h3>
-                  <p class="mb-0">From to weddings to school socials to stage</p>
-                </figcaption>
-              </figure>
-            </div>
+            <figcaption class="mt-0">
+              <h3><a href="html/marketing.html" target="_blank">Marketing Pieces</a></h3>
+              <p class="mb-0">From posters to brochures to social media</p>
+            </figcaption>
+          </figure>
+        </div>
 
-          </div> <!-- row div -->
-        </div> <!-- container div -->
-      </section> <!-- portfolio ends -->
-    </article>
+        <!-- fourth img -->
+        <div class="col-md-6">
+          <figure>
+            <div class="img-overlay-wrapper">
+              <div class="image-wrapper cycle-slideshow" data-cycle-slides="> a" data-cycle-auto-height="3:2">
+                <a href="html/portraits.html" target="_blank">
+                  <img class="img-fluid" src="img/Studio_portraits/dnl04_2019_Dr. Alison Gibson_square 2.jpg" alt="Digital Illustration of myself drawing">
+                </a>
+                <a href="html/portraits.html" target="_blank">
+                  <img class="img-fluid" src="img/portraits/dnl08_2019_ZebutisEngagement-2.jpg" alt="">
+                </a>
+                <a href="html/portraits.html" target="_blank">
+                  <img class="img-fluid" src="img/portraits/dnl11_2017_SundayWalk-1.jpg" alt="Ink Drawing">
+                </a>
+              </div>
+            </div>
+            <figcaption class="mt-0">
+              <h3><a href="html/Portraits.html" target="_blank">Portraits</a></h3>
+              <p class="mb-0">From serious studio to candid outdoor to head shots</p>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- fifth img -->
+        <div class="col-md-6">
+          <figure>
+            <div class="img-overlay-wrapper">
+              <div class="image-wrapper">
+                <div class="image-wrapper cycle-slideshow" data-cycle-slides="> a" data-cycle-auto-height="3:2">
+                  <a href="html/travel.html" target="_blank">
+                    <img class="img-fluid" src="img/travel/dnl11_2017_Kyoto-10.jpg" alt="">
+                  </a>
+                  <a href="html/travel.html" target="_blank">
+                    <img class="img-fluid" src="img/travel/dnl06_2017_westernTrip-8.jpg" alt="">
+                  </a>
+                  <a href="html/travel.html" target="_blank">
+                    <img class="img-fluid" src="img/travel/dnl06_2017_badland-3.jpg" alt="Badland">
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <figcaption class="mt-0">
+              <h3><a href="html/travel.html" target="_blank">Travel Photography</a></h3>
+              <p class="mb-0">From landscape to wildlife to city and people</p>
+            </figcaption>
+          </figure>
+        </div>
+        <!--sixth img -->
+        <div class="col-md-6">
+          <figure>
+            <div class="img-overlay-wrapper">
+              <div class="image-wrapper cycle-slideshow" data-cycle-slides="> a" data-cycle-auto-height="3:2">
+                <a href="html/events.html" target="_blank">
+                  <img class="img-fluid" src="img/weddings/dnl06_2017_YinYin-3.jpg" alt="">
+                </a>
+                <a href="html/events.html" target="_blank">
+                  <img class="img-fluid" src="img/Events/dnl08_2018_Honeyrock-1.jpg" alt="">
+                </a>
+                <a href="html/events.html" target="_blank">
+                  <img class="img-fluid" src="img/Events/dnl11_2018_artistSeries-4.jpg" alt="Ink Drawing">
+                </a>
+              </div>
+            </div>
+            <figcaption class="mt-0">
+              <h3><a href="html/events.html" target="_blank">Event Photography</a></h3>
+              <p class="mb-0">From to weddings to school socials to stage</p>
+            </figcaption>
+          </figure>
+        </div>
+        <!--sixth img -->
+        <div class="col-md-6">
+          <figure>
+            <div class="img-overlay-wrapper">
+              <div class="image-wrapper cycle-slideshow" data-cycle-slides="> a" data-cycle-auto-height="3:2">
+                <a href="html/personal.html" target="_blank">
+                  <img class="img-fluid" src="img/Studio_portraits/dnl023_2019_Daini Self portrait-90.jpg" alt="">
+                  <img class="img-fluid" src="img/weddings/dnl06_2017_YinYin-3.jpg" alt="">
+                </a>
+                <a href="html/personal.html" target="_blank">
+                  <img class="img-fluid" src="img/personal/dnl11_2018_WheatonSnow-4.jpg" alt="">
+                </a>
+                <a href="html/personal.html" target="_blank">
+                  <img class="img-fluid" src="img/personal/dnl02_2019_lingua-68.jpg" alt="">
+                </a>
+              </div>
+
+            </div>
+            <figcaption class="mt-0">
+              <h3><a href="html/personal.html" target="_blank">Personal Photography Projects</a></h3>
+              <p class="mb-0">Spontaneous Explorations</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div> <!-- row div -->
+    </section>
   </main>
   <!--------------------------------------------------
 footer
 ---------------------------------------------------->
   <footer class="footer text-center" role="contentinfo">
-    <div class="container" data-aos="fade-up" data-aos-duration="600">
+    <div class="container">
       <ul class="list-inline">
         <li class="list-inline-item">
           <a class="social-link rounded-circle" href="https://dainiliu.net" title="My another website" target="_blank">
@@ -287,6 +336,8 @@ footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="vendor/typed/typed.js"></script>
   <script src="vendor/aos/aos.js"></script>
+  <script src="/vendor/cycle/cycle2.min.js"></script>
+
   <!-- Custom scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="js/custom.js"></script>

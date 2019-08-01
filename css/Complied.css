@@ -396,28 +396,20 @@ button:focus {
   background-size: cover;
 }
 
-.img-overlay-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
+.img-overlay-wrapper,
 .image-wrapper {
-  padding-bottom: 100%;
   position: relative;
   overflow: hidden;
 }
 
 #portfolio figure {
   background: #F7F7F7;
-  margin-bottom: 45px;
+  margin-bottom: 3rem;
   -webkit-box-shadow: 0 2px 5px 0 rgba(11, 12, 0, 0.04), 0 2px 10px 0 rgba(11, 12, 0, 0.06);
           box-shadow: 0 2px 5px 0 rgba(11, 12, 0, 0.04), 0 2px 10px 0 rgba(11, 12, 0, 0.06);
 }
 
 #portfolio figure img {
-  position: absolute;
-  max-height: 140%;
-  max-width: 150%;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: 0.3s;
@@ -460,7 +452,6 @@ button:focus {
   font-weight: 300;
   color: #F7F7F7;
   padding: 10px 23px;
-  line-height: 1;
   border: 1px solid #F7F7F7;
   border-radius: 0px;
   margin: 4px;
