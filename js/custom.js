@@ -93,7 +93,7 @@
    // ========================================================================= /
    $("#justifiedGallery").justifiedGallery({
      lastRow: 'nojustify',
-     rowHeight: 350,
+     rowHeight: 400,
      margins: 12,
      captions: false,
      selector: 'div, div:not(.spinner)',

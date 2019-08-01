@@ -1,13 +1,4 @@
-
 #justifiedGallery {
-	// .empty-gallery {
-	// 	width: 1000px !important;
-	// 	background-color: $outer-space;
-	// }
-	// .empty-text {
-	// 	position: absolute;
-	// 	margin-top: 50%;
-	// }
 	.overlay-wrapper {
 		overflow: hidden;
 		&:hover {
@@ -52,6 +43,11 @@
 		transform: translateY(-50%);
 		left: 0;
 		right: 0;
+		padding: 1rem;
 		text-align: center;
+	}
+	h3{
+		color: $baby-powder;
+		font-weight: 300;
 	}
 }

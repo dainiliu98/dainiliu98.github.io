@@ -74,11 +74,3 @@
      );
    });
  });
- // scroll to bottom of a page, redirect to another page
- //  window.onscroll = function (ev) {
- //    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
- //      window.setTimeout(function () {
- //        location.href = "illustrations.html";
- //      }, 3000);
- //    }
- //  };

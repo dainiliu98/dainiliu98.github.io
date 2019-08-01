@@ -4,7 +4,7 @@ body {
   height: 100%;
 
   font-size: 1rem;
-  background-color: $gainsboro;
+  background-color: $baby-powder;
   color: $black;
 }
 
@@ -12,8 +12,9 @@ h1,
 h2 {
   font-family: $font-family-serif;
 }
-
+//--------------------------------
 // responsive typography
+//--------------------------------
 @media (min-width: 768px) {
   html {
     font-size: 1.1rem;
@@ -25,12 +26,14 @@ h2 {
     font-size: 1.3rem;
   }
 }
+//--------------------------------
+// container max width
+//--------------------------------
 
-
-p.ps {
-  line-height: 1rem;
-  font-size: 0.8rem;
-  font-style: italic;
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1300px;
+  }
 }
 
 //--------------------------------
@@ -39,6 +42,12 @@ p.ps {
 hr {
   border: 0.5px solid $outer-space;
   margin: 0.2rem 0 0;
+}
+// ps
+p.ps {
+  line-height: 1rem;
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 //--------------------------------
