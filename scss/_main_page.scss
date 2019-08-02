@@ -1,5 +1,4 @@
 // The portfolio section in the main page
-.img-overlay-wrapper,
 .image-wrapper {
 	position: relative;
 	overflow: hidden;
@@ -19,41 +18,7 @@
 		&:hover {
 			img {
 				transform: scale(1.1);
-			}
-
-			.overlay {
-				opacity: 1;
-				visibility: visible;
-			}
-		}
-
-		.overlay {
-			position: absolute;
-			height: 100%;
-			width: 100%;
-			padding: 10px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background: rgba($outer-space, .9);
-			opacity: 0;
-			visibility: hidden;
-			transition: 0.3s;
-
-			a {
-				display: inline-block;
-				font-weight: 300;
-				color: $baby-powder;
-				padding: 10px 23px;
-				border: 1px solid $baby-powder;
-				border-radius: 0px;
-				margin: 4px;
-				transition: 0.3s;
-
-				&:hover {
-					text-decoration: none;
-				}
-			}
+			}	
 		}
 	}
 	figcaption {
@@ -70,6 +35,6 @@
 }
 
 //fancybox caption
-.fancybox-caption__body {
-	font-weight: 300;
-}
+// .fancybox-caption__body {
+// 	font-weight: 300;
+// }

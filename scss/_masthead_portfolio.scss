@@ -13,13 +13,12 @@
     font-size: 0.8rem;
   }
 
+  p a {
+    color: $primary;
+  }
+
   a {
     color: $black;
-
-    p a {
-      color: $primary;
-    }
-
 
     &:hover {
       color: $primary;

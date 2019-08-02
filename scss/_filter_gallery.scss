@@ -4,7 +4,8 @@
 		padding: 0;
 		position: relative;
 		overflow: hidden;
-		height:100vh;
+		height: 100vh;
+
 		/* in case script does not load */
 		img:first-child {
 			position: static;
@@ -15,14 +16,14 @@
 	/* pager */
 	.example-pager {
 		// width: 100%;
-		display:flex;
+		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		z-index: 500;
-		width:100%;
+		width: 100%;
 		overflow: hidden;
 		margin-bottom: 1rem;
-		margin-top:1rem;
+		margin-top: 1rem;
 		border-radius: 0.5rem;
 
 		a {
@@ -33,16 +34,29 @@
 			color: $gainsboro;
 			background-color: $primary;
 		}
-		// a:first-child{
-		// 	border-radius: 5px 0 0 5px;
-		// }
-		// a:last-child {
-		// 	border-radius: 0 5px 5px 0;
-		// }
 
-		a.cycle-pager-active, a:hover {
-			 background-color: darken($primary, 20%);
-			 text-decoration: none;
+		a.cycle-pager-active,
+		a:hover {
+			background-color: darken($primary, 20%);
+			text-decoration: none;
+		}
+
+	}
+
+	// zoom image on hover
+	.image-wrapper {
+		position: relative;
+		overflow: hidden;
+	}
+
+	img {
+		transform: scale(1);
+		transition: 0.3s;
+	}
+
+	&:hover {
+		img {
+			transform: scale(1.1);
 		}
 	}
 
