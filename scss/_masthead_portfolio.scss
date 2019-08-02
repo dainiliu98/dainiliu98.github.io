@@ -16,6 +16,11 @@
   a {
     color: $black;
 
+    p a {
+      color: $primary;
+    }
+
+
     &:hover {
       color: $primary;
       text-decoration: none;

@@ -321,6 +321,10 @@ button:focus {
   color: #0B0C00;
 }
 
+#masthead_portfolio a p a {
+  color: #3f7f7a;
+}
+
 #masthead_portfolio a:hover {
   color: #3f7f7a;
   text-decoration: none;
@@ -529,7 +533,7 @@ button:focus {
 }
 
 #resume a {
-  color: #4C5B61;
+  color: #3f7f7a;
 }
 
 #resume hr {
