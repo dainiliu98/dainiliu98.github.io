@@ -705,6 +705,7 @@ button:focus {
   width: 100%;
   top: 0;
   left: 0;
+  background: rgba(76, 91, 97, 0.9);
   opacity: 0;
   -webkit-transition: .3s;
   transition: .3s;
