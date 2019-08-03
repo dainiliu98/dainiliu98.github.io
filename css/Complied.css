@@ -131,6 +131,8 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .nav-footer .left, .nav-footer .right, .nav-footer .back-to-top {
@@ -592,7 +594,8 @@ button:focus {
 }
 
 #about-me .myaccordion {
-  margin: 1rem auto;
+  max-width: 900px;
+  margin: 0;
 }
 
 #about-me .myaccordion .card {

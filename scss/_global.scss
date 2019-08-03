@@ -133,6 +133,7 @@ button:focus {
   font-family: $font-family-serif;
   display:flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   .left, .right, .back-to-top{
     margin-bottom: 1rem;
   }
