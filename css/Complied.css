@@ -125,6 +125,7 @@ button:focus {
 .nav-footer {
   font-weight: 300;
   font-family: "Cormorant", "Garamond", "Georgia", "Times New Roman", Times, serif;
+  line-height: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,7 +571,6 @@ button:focus {
 #about-me p {
   font-weight: 300;
   line-height: 2rem;
-  text-indent: 2rem;
 }
 
 #about-me p a {
