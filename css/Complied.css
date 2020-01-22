@@ -297,15 +297,30 @@ button:focus {
 #masthead .btn-primary {
   font-weight: lighter;
   background: #3f7f7a;
-  border: none;
   color: #F7F7F7;
   padding: 15px 20px;
-  margin-top: 10px;
-  border-radius: 0;
+  margin-right: 20px;
+  line-height: 1;
 }
 
-#masthead .btn-primary :hover {
+#masthead .btn-primary:hover {
   background: #2e5d59;
+  text-decoration: none;
+}
+
+#masthead .btn-outline-primary {
+  font-weight: lighter;
+  color: #F7F7F7;
+  padding: 15px 20px;
+  background: transparent;
+  line-height: 1;
+  border: 1px solid #F7F7F7;
+}
+
+#masthead .btn-outline-primary:hover {
+  text-decoration: none;
+  background: #3f7f7a;
+  border: 1px solid #3f7f7a;
 }
 
 @media (min-width: 992px) {
