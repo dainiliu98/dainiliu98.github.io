@@ -300,6 +300,7 @@ button:focus {
   color: #F7F7F7;
   padding: 15px 20px;
   margin-right: 20px;
+  margin-top: 10px;
   line-height: 1;
 }
 
@@ -312,6 +313,7 @@ button:focus {
   font-weight: lighter;
   color: #F7F7F7;
   padding: 15px 20px;
+  margin-top: 2rem;
   background: transparent;
   line-height: 1;
   border: 1px solid #F7F7F7;
