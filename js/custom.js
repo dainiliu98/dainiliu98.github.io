@@ -82,7 +82,7 @@
    var typed = $(".typed");
    $(function () {
      typed.typed({
-       strings: ["Daini Liu.", "a College Senior.", "a Graphic Designer.", "a Photographer.", "an aspiring UX designer","a Biologist.", "a Christ Follower."
+       strings: ["Daini Liu.", "a College Senior.", "a Graphic Designer.", "a Photographer.", "an Aspiring UX Designer","a Biologist.", "a Christ Follower."
        ],
        typeSpeed: 50,
        loop: true,
