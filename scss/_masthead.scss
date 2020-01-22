@@ -12,6 +12,19 @@
   h1 {
     font-size: 2.25rem;
   }
+  .btn-primary{
+  
+    font-weight: lighter;
+     background: $primary;
+     border: none;
+     color: $baby-powder;
+     padding: 15px 20px;
+     margin-top: 10px;
+     border-radius: 0;
+    :hover{
+      background: darken($primary, 10%);
+    }
+  }
 
   @media (min-width: 992px) {
     height: 100vh;

@@ -180,11 +180,8 @@ button:focus {
   color: #F7F7F7;
   padding: 20px 35px;
   margin-top: 10px;
-  font-size: 16px;
   font-size: 13px;
-  line-height: 1em;
   text-transform: uppercase;
-  letter-spacing: normal;
   border-radius: 0;
 }
 
@@ -295,6 +292,20 @@ button:focus {
 
 #masthead h1 {
   font-size: 2.25rem;
+}
+
+#masthead .btn-primary {
+  font-weight: lighter;
+  background: #3f7f7a;
+  border: none;
+  color: #F7F7F7;
+  padding: 15px 20px;
+  margin-top: 10px;
+  border-radius: 0;
+}
+
+#masthead .btn-primary :hover {
+  background: #2e5d59;
 }
 
 @media (min-width: 992px) {
