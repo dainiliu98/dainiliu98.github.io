@@ -44,6 +44,13 @@
        scrollTop: $(".footer").offset().top
      }, 500);
    });
+
+   var $toMyWork = $(".toMyWork");
+   $toMyWork.on('click', function (e) {
+     $("html, body").animate({
+       scrollTop: $(".myWork").offset().top
+     }, 500);
+   });
    // ========================================================================= //
    // Preloader
    // ========================================================================= /
